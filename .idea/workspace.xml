@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="40bfc29d-043a-4783-af2c-14557fe34170" name="Default Changelist" comment="" />
+    <list default="true" id="40bfc29d-043a-4783-af2c-14557fe34170" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Puzzle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +16,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1aSfCBhB1bWCm845jap3V3Xpa7C" />
   <component name="ProjectViewState">
@@ -38,10 +44,26 @@
       <workItem from="1586733788340" duration="16000" />
       <workItem from="1586733948028" duration="43000" />
       <workItem from="1586734011489" duration="22000" />
+      <workItem from="1586736698766" duration="207000" />
+      <workItem from="1586737201263" duration="50000" />
+      <workItem from="1586737634806" duration="149000" />
+      <workItem from="1586740328094" duration="34000" />
+      <workItem from="1586740626753" duration="594000" />
+      <workItem from="1586743744228" duration="149000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-979" y="255" key="FileChooserDialogImpl" timestamp="1586736825079">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-979" y="255" key="FileChooserDialogImpl/0.0.1280.720/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1586736825079" />
+    <state x="-1376" y="134" key="new project wizard" timestamp="1586736722569">
+      <screen x="-1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1376" y="134" key="new project wizard/0.0.1280.720/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1586736722569" />
   </component>
 </project>
