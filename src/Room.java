@@ -1,90 +1,180 @@
 //room#~Boolean~Room Description~items~puzzleId~Room Connections:(N,E,S,W layout)
+/**
+ * Class: Room
+ *
+ */
 public class Room {
-	private String roomId;
-	private boolean isVisited;
-	private String roomDescription;
-	private String puzzleId;
-	private String northRoomId;
-	private String eastRoomId;
-	private String southRoomId;
-	private String westRoomId;
-	
-	public Room(String roomId, boolean isVisited, String roomDescription,
-			String puzzleId, String northRoomId, String eastRoomId, String southRoomId, String westRoomId)
-	{
-		this.roomId = roomId;
-		this.isVisited = isVisited;
-		this.roomDescription = roomDescription;
-		this.puzzleId = puzzleId;
-		this.northRoomId = northRoomId;
-		this.eastRoomId = eastRoomId;
-		this.southRoomId = southRoomId;
-		this.westRoomId = westRoomId;
+	private int roomID;
+	private String roomName;
+	private boolean hasVisted;
+	private String roomDescrip;
+	private int hasItem;
+	private  int hasPuzzle;
+	private int hasMonster;
+	private int north;
+	private int east;
+	private int south;
+	private int west;
+
+	/**
+	 * Constructor Room
+	 * @param roomID
+	 * @param roomName
+	 * @param hasVisted
+	 * @param roomDescrip
+	 * @param northRoomId
+	 * @param eastRoomId
+	 * @param southRoomId
+	 * @param westRoomId
+	 */
+	public Room(int roomID, String roomName, boolean hasVisted, String roomDescrip,int hasItem,int hasPuzzle,int hasMonster, int northRoomId,
+				int eastRoomId, int southRoomId, int westRoomId) {
+		this.roomID = roomID;
+		this.roomName = roomName;
+		this.hasVisted = hasVisted;
+		this.roomDescrip = roomDescrip;
+		this.hasItem = hasItem;
+		this.hasPuzzle = hasPuzzle;
+		this.hasMonster = hasMonster;
+		this.north = northRoomId;
+		this.east = eastRoomId;
+		this.south = southRoomId;
+		this.west = westRoomId;
 	}
 
-	public String getRoomId() {
-		return roomId;
+	/**
+	 * Method: getRoomID
+	 * @return roomId
+	 */
+	public int getRoomID() {
+		return roomID;
 	}
 
-	public void setRoomId(String roomId) {
-		this.roomId = roomId;
+	/**
+	 * Method: setRoomID()
+	 * @param roomID
+	 */
+	public void setRoomID(int roomID) {
+		this.roomID = roomID;
 	}
 
-	public boolean isVisited() {
-		return isVisited;
+	/**
+	 * Method: getRoomName()
+	 * @return room name
+	 */
+	public String getRoomName() {
+		return roomName;
 	}
 
-	public void setVisited(boolean isVisited) {
-		this.isVisited = isVisited;
+	/**
+	 * Method: getHasVisted9)
+	 * @return true is room visited before
+	 */
+	public boolean getHasVisted() {
+		return hasVisted;
 	}
 
-	public String getRoomDescription() {
-		return roomDescription;
+	/**
+	 * Method: setHasVisted()
+	 * sets to true if room visited before
+	 * @param hasVisted
+	 */
+	public void setHasVisted(boolean hasVisted) {
+		this.hasVisted = hasVisted;
 	}
 
-	public void setRoomDescription(String roomDescription) {
-		this.roomDescription = roomDescription;
+	/**
+	 * Method: setHasItem()
+	 * sets if room has an item
+	 * @param hasItem
+	 */
+
+	public void setHasItem(int hasItem) {
+		this.hasItem = hasItem;
 	}
 
-	public String getPuzzleId() {
-		return puzzleId;
-	}
-
-	public void setPuzzleId(String puzzleId) {
-		this.puzzleId = puzzleId;
-	}
-
-	public String getNorthRoomId() {
-		return northRoomId;
-	}
-
-	public void setNorthRoomId(String northRoomId) {
-		this.northRoomId = northRoomId;
-	}
-
-	public String getEastRoomId() {
-		return eastRoomId;
-	}
-
-	public void setEastRoomId(String eastRoomId) {
-		this.eastRoomId = eastRoomId;
-	}
-
-	public String getSouthRoomId() {
-		return southRoomId;
-	}
-
-	public void setSouthRoomId(String southRoomId) {
-		this.southRoomId = southRoomId;
-	}
-
-	public String getWestRoomId() {
-		return westRoomId;
-	}
-
-	public void setWestRoomId(String westRoomId) {
-		this.westRoomId = westRoomId;
+	/**
+	 * Method: setHasPuzzle()
+	 * set if room has a puzzle
+	 * @param hasPuzzle
+	 */
+	public void setHasPuzzle(int hasPuzzle) {
+		this.hasPuzzle = hasPuzzle;
 	}
 
 
+	/**
+	 * Method: getRoomDescrip()
+	 * @return room Description
+	 */
+	public String getRoomDescrip() {
+		return roomDescrip;
+	}
+
+	/**
+	 * Method: getNorth()
+	 * @return north room information
+	 */
+	public int getNorth() {
+		return north;
+	}
+
+	/**
+	 * Method: getEast()
+	 * @return east room information
+	 */
+	public int getEast() {
+		return east;
+	}
+
+	/**
+	 * Method: getSouth()
+	 * @return south room information
+	 */
+	public int getSouth() {
+		return south;
+	}
+
+	/**
+	 * Method: getWest()
+	 * @return west room information
+	 */
+	public int getWest() {
+		return west;
+	}
+
+	/**
+	 * Method: getHasItem()
+	 * @return hasItem
+	 */
+
+	public int getHasItem() {
+		return hasItem;
+	}
+	/**
+	 * Method: getHasPuzzle()
+	 * @return has Puzzle
+	 */
+	public int getHasPuzzle() {
+		return hasPuzzle;
+	}
+	/**
+	 *Methos: getHasMonster()
+	 * @return has Monster
+	 */
+	public int getHasMonster() {
+		return hasMonster;
+	}
+
+	/**
+	 * Method: setHasMonster();
+	 * @param hasMonster
+	 */
+	public void setHasMonster(int hasMonster) {
+		this.hasMonster = hasMonster;
+	}
 }
+
+
+
+
