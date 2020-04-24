@@ -242,10 +242,6 @@ public class Player {
         }
     }
 
-
-
-
-
     public static int getHp() {
         return hp;
     }
