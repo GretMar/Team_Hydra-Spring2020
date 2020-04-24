@@ -1,5 +1,4 @@
-import java.io.File;
-import java.io.FileNotFoundException;
+import java.io.*;
 import java.util.Scanner;
 
 public class Game {
@@ -11,7 +10,7 @@ public class Game {
      *
      * @param
      */
-    public void play() throws NullPointerException, FileNotFoundException {
+    public void play() throws NullPointerException, IOException {
         /**
          Scanner to take in your input
          */
@@ -26,6 +25,43 @@ public class Game {
          */
         File textFile = new File("rooms1.txt");
 
+        File monsterFile = new File("monsters1.txt");
+        try {
+            Scanner scanner = new Scanner(monsterFile).useDelimiter(":");
+            while (scanner.hasNext()) {
+                int monsterId = scanner.nextInt();
+                //System.out.println(monsterId);
+                String mName = scanner.next();
+               // System.out.println(mName);
+                String mdes = scanner.next();
+                //System.out.println(mdes);
+                int location = Integer.parseInt(String.valueOf(scanner.nextInt()));
+               // System.out.println(location);
+                int mHealth = scanner.nextInt();
+               // System.out.println(mHealth);
+                String attack1 = scanner.next();
+               // System.out.println(attack1);
+                int attackdam1 = scanner.nextInt();
+                //System.out.println(attackdam1);
+                String attack2 = scanner.next();
+               // System.out.println(attack2);
+                int attackdam2 = scanner.nextInt();
+                //System.out.println(attackdam2);
+                String attack3 = scanner.next();
+                //System.out.println(attack3);
+                int attackdam3 = scanner.nextInt();
+                //System.out.println(attackdam3);
+                String attack4 = scanner.next();
+                //System.out.println(attack4);
+                int attackdam4 = scanner.nextInt();
+                //System.out.println(attackdam4);
+
+                Map.addMonster(new Monster(monsterId,mName,mdes,location,mHealth
+                ,attack1,attackdam1,attack2,attackdam2,attack3,attackdam3,attack4,attackdam4));
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
         Scanner fileReader = null;
         try {
             fileReader = new Scanner(textFile);
@@ -69,10 +105,10 @@ public class Game {
              * close roomReader
              */
             fileReader.close();
-
         } catch (FileNotFoundException e) {
             System.out.println("No file found");
         }
+
         /**
          * Instructions
          */
@@ -81,6 +117,7 @@ public class Game {
         System.out.println("Pick option by entering number next to it.");
         System.out.println("Move by entering a direction (example north or n)");
         System.out.println("End game at any time by entering 'Exit'");
+        System.out.println("Enter 'help' for command menu");
         System.out.println("============================================================================================");
         System.out.println();
         /**
@@ -100,7 +137,7 @@ public class Game {
                         + Map.getRooms().get(roomID).getRoomDescrip());
                 System.out.println();
                 System.out.println("What would you like to do?(enter number)");
-                System.out.println("1. Move \n2. Inspect Area \n3. Check inventory ");
+                System.out.println("1. Move \n2. Search Area \n3. Check inventory ");
                 String userInput = input.nextLine();
                 /**
                  * loop calls methods from Map and Player class

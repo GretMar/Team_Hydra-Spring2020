@@ -1,0 +1,20 @@
+1:
+Mr.Satan:
+In front of you stands a tall muscular man with a black
+curly afro and mustache. He is wearing a martial arts
+uniform. You soon discover that this is Mr. Satan. He
+is the current World Martial Arts Champion. Mr. Satan
+is your final boss that you must defeat to win the
+game. Mr. Satan’s strengths are his skill level in
+martial arts and his physical strength.:29:110:
+-Mr. Satan performs a palm strike
+to your face. You lose 15 HP:15:
+-Mr. Satan doesn’t like what you
+did, he retaliates by pushing you to
+the ground. You lose 10 HP.:10:
+- Mr. Satan draws his axe and
+swings it at you. This was a
+devastating move, You lose 40 HP:40:
+- Mr. Satan thinks you are a joke,
+he pulls out his club and smacks you
+on the head. You lose 15 HP.:15

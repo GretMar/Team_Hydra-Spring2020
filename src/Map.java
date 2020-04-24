@@ -3,6 +3,8 @@ import java.util.ArrayList;
 public class Map {
     private static ArrayList<Room> rooms = new ArrayList<>();
 
+    private static ArrayList<Monster> monsters = new ArrayList<>();
+
 
     /**
      * Method: getRooms()
@@ -39,4 +41,10 @@ public class Map {
             }
         }
     }
+    public static ArrayList<Monster> getMonsters(){
+        return monsters;
+    }
+    public static void addMonster(Monster m){ monsters.add(m);}
+
+    public static void removeMonster(Monster m){monsters.remove(m);}
 }
