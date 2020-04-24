@@ -5,6 +5,9 @@ public class Map {
 
     private static ArrayList<Monster> monsters = new ArrayList<>();
 
+    private ArrayList<Puzzle> puzzles = new ArrayList<>();
+
+    private ArrayList<Items> items = new ArrayList<>();
 
     /**
      * Method: getRooms()
@@ -41,6 +44,48 @@ public class Map {
             }
         }
     }
+
+    public  ArrayList<Puzzle> getPuzzles(){
+        return puzzles;
+    }
+    /**
+     * Method addPuzzles()
+     * adds to arrayList of puzzles
+     * @param p
+     */
+    public void addPuzzles(Puzzle p){
+        puzzles.add(p);
+    }
+    /**
+     * Method removePuzzles
+     * removes puzzles from map
+     * @param p
+     */
+    public  void removePuzzle(Puzzle p )
+    {
+        puzzles.remove(p);
+    }
+
+    /**
+     * Method getItems()
+     * @return items
+     */
+    public ArrayList<Items> getItems(){
+        return items;
+    }
+    /**
+     * Method addItems()
+     * adds items to ArrayList of Items
+     * @param i
+     */
+    public void addItems(Items i){
+        items.add(i);
+    }
+
+
+
+
+
     public static ArrayList<Monster> getMonsters(){
         return monsters;
     }

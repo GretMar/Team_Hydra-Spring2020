@@ -58,6 +58,7 @@ public class Game {
 
                 Map.addMonster(new Monster(monsterId,mName,mdes,location,mHealth
                 ,attack1,attackdam1,attack2,attackdam2,attack3,attackdam3,attack4,attackdam4));
+
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -173,14 +174,104 @@ public class Game {
                         System.out.println("Please enter a valid direction enter N,E,S,W");
 
                     }
-
                     Map.getRooms().get(roomID).setHasVisted(true);
-
-
                     roomID = Player.getCurrentLocation();
                 }
+                else if (userInput.equalsIgnoreCase("2")) {
+                    while (true) {
+                        Scanner op = new Scanner(System.in);
+                        player.playerStatus();
+                        player.inspect();
+                        System.out.println();
+                        System.out.println("What do you want to do:");
+                        System.out.println("1.Examine\n2.pickup item\n3.drop item\n4.back");
+                        String choose = input.nextLine();
+                        if (choose.equalsIgnoreCase("1")) {
+                            System.out.println("=========================================================================");
+                            System.out.println("What do you want to examine: ");
+                            String ans = op.nextLine();
+                            player.scout(ans);
+
+                        } else if (choose.equalsIgnoreCase("2")) {
+                            System.out.println("=========================================================================");
+                            System.out.println("What do you want to pickup: ");
+                            String userinp = op.nextLine();
+                            player.pickup(userinp);
+                        } else if (choose.equalsIgnoreCase("3")) {
+                            System.out.println("=========================================================================");
+                            System.out.println("What do you want to drop: ");
+                            String userinp = op.nextLine();
+                            player.drop(userinp);
+                        } else if (choose.equalsIgnoreCase("4")) {
+                            break;
+                        } else {
+                            System.out.println("Invalid please enter valid input");
+                        }
+                    }
+                }
+                /**
+                 * displays user inventory
+                 * gives player option to equip and UnEquip Items
+                 * gives player option if using healing items
+                 */
+                else if (userInput.equalsIgnoreCase("3")) {
+                    while (true) {
+                        player.playerStatus();
+                        Player.printInventory();
+                        Scanner eq = new Scanner(System.in);
+                        System.out.println();
+                        System.out.println("What do you want to do:");
+                        System.out.println("1.Equip\n2.Unequipped\n3.Heal\n4.Go back");
+                        String choose = input.nextLine();
+                        if(choose.equalsIgnoreCase("1"))
+                        {
+                            player.playerStatus();
+                            Player.printInventory();
+                            System.out.println("What do you want to equip: ");
+                            String e = eq.nextLine();
+                            Items.equip(e);
+                        }
+                        else if(choose.equalsIgnoreCase("2"))
+                        {
+                            player.playerStatus();
+                            Player.printInventory();
+                            System.out.println(("What do you want too unequipped: "));
+                            String ue = eq.nextLine();
+                            Items.unEquip(ue);
+                        }
+                        else if(choose.equalsIgnoreCase("3"))
+                        {
+                            player.playerStatus();
+                            Player.printInventory();
+                            System.out.println("What item do you want to heal with: ");
+                            String h = eq.nextLine();
+                            Items.heal(h);
+
+                        }
+                        else if(choose.equalsIgnoreCase("4"))
+                        {
+                            break;
+                        }
+                        else {
+                            System.out.println("Invalid please enter valid input");
+                        }
+                    }
+
+                }
+                else if (userInput.equalsIgnoreCase("exit")) {
+                    return;
+                }
+                else {
+                    System.out.println("Invalid input please try again.");
+                }
+
             }
         }
+        input.close();
     }
+
 }
+
+
+
 
