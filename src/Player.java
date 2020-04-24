@@ -104,6 +104,7 @@ public class Player {
 
     }
 
+
     protected void pickup(String item) {
         int count = 0;
         for(int i =0; i < map.getItems().size(); i++) {
