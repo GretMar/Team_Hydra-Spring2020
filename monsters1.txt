@@ -1,5 +1,4 @@
-1:
-Mr.Satan:
+1:Mr.Satan:
 In front of you stands a tall muscular man with a black
 curly afro and mustache. He is wearing a martial arts
 uniform. You soon discover that this is Mr. Satan. He
@@ -17,4 +16,19 @@ swings it at you. This was a
 devastating move, You lose 40 HP:40:
 - Mr. Satan thinks you are a joke,
 he pulls out his club and smacks you
-on the head. You lose 15 HP.:15
+on the head. You lose 15 HP.:15:2:Piccolo:
+You see in the distance a green tall muscular man
+with large ears and a chiseled face. His name is
+Piccolo. He appears grumpy and doesn’t look like he
+wants to be bothered. But who knows what he is
+going to do if you don’t attack.:17:80:
+-Piccolo hates people that initiate
+contact. Piccolo throws a solid punch
+at you. You lose 10 HP:10:
+- Quick retaliation. Piccolo kicks
+your legs and you fall to the ground.
+You lose 15 HP.:15:
+- Piccolo is angry. He gets you in
+the throat. You lose 5 HP:5:
+What did you do that for. Piccolo
+kicks you in the stomach. You lose 12 HP:12

@@ -30,32 +30,32 @@ public class Game {
             Scanner scanner = new Scanner(monsterFile).useDelimiter(":");
             while (scanner.hasNext()) {
                 int monsterId = scanner.nextInt();
-                //System.out.println(monsterId);
+                System.out.println(monsterId);
                 String mName = scanner.next();
 
-               // System.out.println(mName);
+                System.out.println(mName);
                 String mdes = scanner.next();
-                //System.out.println(mdes);
+                System.out.println(mdes);
                 int location = Integer.parseInt(String.valueOf(scanner.nextInt()));
-               // System.out.println(location);
+                System.out.println(location);
                 int mHealth = scanner.nextInt();
-               // System.out.println(mHealth);
+                System.out.println(mHealth);
                 String attack1 = scanner.next();
-               // System.out.println(attack1);
+                System.out.println(attack1);
                 int attackdam1 = scanner.nextInt();
-                //System.out.println(attackdam1);
+                System.out.println(attackdam1);
                 String attack2 = scanner.next();
-               // System.out.println(attack2);
+                System.out.println(attack2);
                 int attackdam2 = scanner.nextInt();
-                //System.out.println(attackdam2);
+                System.out.println(attackdam2);
                 String attack3 = scanner.next();
-                //System.out.println(attack3);
+                System.out.println(attack3);
                 int attackdam3 = scanner.nextInt();
-                //System.out.println(attackdam3);
+                System.out.println(attackdam3);
                 String attack4 = scanner.next();
-                //System.out.println(attack4);
+                System.out.println(attack4);
                 int attackdam4 = scanner.nextInt();
-                //System.out.println(attackdam4);
+                System.out.println(attackdam4);
 
                 Map.addMonster(new Monster(monsterId,mName,mdes,location,mHealth,
                 attack1,attackdam1,attack2,attackdam2,attack3,attackdam3,attack4,attackdam4));
@@ -185,11 +185,11 @@ public class Game {
                         player.inspect();
                         System.out.println();
                         System.out.println("What do you want to do:");
-                        System.out.println("1.Examine\n2.pickup item\n3.drop item\n4.back");
+                        System.out.println("1.Use Scouter\n2.pickup item\n3.drop item\n4.back");
                         String choose = input.nextLine();
                         if (choose.equalsIgnoreCase("1")) {
                             System.out.println("=========================================================================");
-                            System.out.println("What do you want to examine: ");
+                            System.out.println("What do you want use the scouter on: ");
                             String ans = op.nextLine();
                             player.scout(ans);
 

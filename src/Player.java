@@ -127,9 +127,9 @@ public class Player {
                 }
                 for(i = 0;i< map.getItems().size(); i++)
                 {
-                    if(map.getRooms().get(currentLocation).getHasItem()==1)
+                    if(Map.getRooms().get(currentLocation).getHasItem()==1)
                     {
-                        if(map.getRooms().get(currentLocation).getRoomID()== map.getItems().get(i).getItemId())
+                        if(Map.getRooms().get(currentLocation).getRoomID()== map.getItems().get(i).getItemId())
                         {
                             count++;
                         }
@@ -137,7 +137,7 @@ public class Player {
                 }
                 if(count == 0)
                 {
-                    map.getRooms().get(currentLocation).setHasItem(0);
+                    Map.getRooms().get(currentLocation).setHasItem(0);
                 }
             }
 

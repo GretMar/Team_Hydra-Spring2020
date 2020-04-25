@@ -4,7 +4,7 @@ false
 Goku's house, also known as Grandpa Gohan's house, is located at the foot of a forest near Mount Paozu.
 0
 0
-1
+0
 4
 0
 0
@@ -37,7 +37,7 @@ false
 Mount Paozu is the location where Goku is raised by Grandpa Gohan, and where the Dragon Ball story begins.
 0
 0
-1
+0
 7
 5
 1
@@ -116,13 +116,24 @@ Also called Northern Wilderness, is the farmland on Earth where Ostrich Chickens
 0
 0
 12
-10
+9
 10
 19
 12
 Mt. Frappe
 false
 A snowy mountain located in the far north section of the Earth, so cold fire turns to ice.
+0
+0
+0
+25
+13
+11
+23
+13
+North Mountains
+false
+Mountain region located north of Spinach Wastes, between Mount Frappe and the Holly Plain
 0
 0
 0
@@ -148,12 +159,12 @@ Muscle Tower is a headquarters of the Red Ribbon Army, located near Jingle Villa
 0
 0
 0
-15
+14
 20
 16
 9
 16
-Topfloor
+Top floor
 false
 This level is the top level of the tower. It is the control room.
 0
@@ -171,7 +182,7 @@ Location on Earth that is King Cold's spaceship landing site.
 0
 1
 0
-17
+18
 0
 0
 18
@@ -268,7 +279,7 @@ false
 Residence of Dr. Flappe, a scientist who used to work for the Red Ribbon Army.
 0
 0
-1
+0
 29
 27
 13
@@ -326,5 +337,5 @@ You are now in the Champion’s Room! Congratulations you have been crowned Worl
 0
 0
 0
-1
+0
 0
