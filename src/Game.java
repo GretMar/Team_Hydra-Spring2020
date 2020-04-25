@@ -36,12 +36,10 @@ public class Game {
     			throw new FileNotFoundException();
     		}
     		itemElements = new ArrayList<Items>();
-    		
     		while(line1 != null) {
     			//System.out.println(line1);
-    			String[] tokens1 = line1.trim().split("~");
-    			
-    			Items y = new Items(Integer.parseInt(tokens1[0]), tokens1[1], tokens1[2], Boolean.parseBoolean(tokens1[3]), 
+    			String[] tokens1 = line1.trim().split("\\*");
+    			Items y = new Items(Integer.parseInt(tokens1[0]), tokens1[1], tokens1[2], Boolean.parseBoolean(tokens1[3]),
     						Boolean.parseBoolean(tokens1[4]), Integer.parseInt(tokens1[5]), Integer.parseInt(tokens1[6]));
     			itemElements.add(y);
     			

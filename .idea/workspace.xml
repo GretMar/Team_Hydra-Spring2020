@@ -2,6 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40bfc29d-043a-4783-af2c-14557fe34170" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/items.txt" beforeDir="false" afterPath="$PROJECT_DIR$/items.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GroupGame/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GroupGame/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GroupGame/Items.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GroupGame/Items.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GroupGame/Map.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GroupGame/Map.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GroupGame/Monster.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GroupGame/Monster.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GroupGame/Play.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GroupGame/Play.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GroupGame/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GroupGame/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GroupGame/Puzzle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GroupGame/Puzzle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GroupGame/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GroupGame/Room.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="87" column="18" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="18" />
+            <state relative-caret-position="135">
+              <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#6044#7737#1" />
@@ -28,6 +38,15 @@
                 <element signature="e#12001#12048#1" />
                 <element signature="e#12070#12164#1" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/items.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -104,8 +123,9 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>item</find>
       <find>scout</find>
+      <find>A\_</find>
+      <find>item</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -117,6 +137,7 @@
         <option value="$PROJECT_DIR$/Puzzle.txt" />
         <option value="$PROJECT_DIR$/src/Puzzle.java" />
         <option value="$PROJECT_DIR$/src/Player.java" />
+        <option value="$PROJECT_DIR$/items.txt" />
         <option value="$PROJECT_DIR$/src/Game.java" />
       </list>
     </option>
@@ -216,7 +237,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9532000" />
+    <option name="totallyTimeSpent" value="10520000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="752" extended-state="6" />
@@ -237,7 +258,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2536349" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39579967" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -325,13 +346,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Puzzle.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-945">
-          <caret line="23" column="3" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Map.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
@@ -353,10 +367,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Puzzle.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-945">
+          <caret line="23" column="3" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/items.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="87" column="18" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="18" />
+        <state relative-caret-position="135">
+          <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#6044#7737#1" />
