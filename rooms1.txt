@@ -202,7 +202,7 @@ false
 Located in the Northern Wilderness, west of East City.
 0
 0
-1
+0
 23
 11
 0
@@ -246,7 +246,7 @@ false
 Is the cave where Master Mutaito developed the Evil Containment Wave.
 0
 0
-0
+1
 0
 12
 19
@@ -301,7 +301,7 @@ false
 Just outside of the Cell games arena
 0
 0
-1
+0
 0
 29
 25
@@ -323,7 +323,7 @@ false
 An area on Earth located north of Jingle Village
 0
 0
-0
+1
 0
 0
 27
