@@ -1,0 +1,17 @@
+A_1*Senzu Bean*Mystical beans that are grown only by Korin. These beans have immense rejuvenation properties.*false*true*0*10
+A_2*20 Zeni*Currency that is found in the world of Dragon Ball which can be of the colors of green and gray.*false*true*0*0
+A_3*Z-Sword*Ancient, extremely heavy sword that was stuck inside of a mountain top which came with a legend that an old god was stuck inside and whomever wielded the great sword would get incredible powers.*false*true*50*0
+A_4*Dragon Ball 1*Created by the Namekian god, these are small orange balls; once all 7 were collected, can summon a mythical beast named Shenron who will increase the players' survival.*false*true*0*0
+A_5*Dragon Ball 2*Created by the Namekian god, these are small orange balls; once all 7 were collected, can summon a mythical beast named Shenron who will increase the players' survival.*false*true*0*0
+A_6*Dragon Ball 3*Created by the Namekian god, these are small orange balls; once all 7 were collected, can summon a mythical beast named Shenron who will increase the players' survival.*false*true*0*0
+A_7*Dragon Ball 4*Created by the Namekian god, these are small orange balls; once all 7 were collected, can summon a mythical beast named Shenron who will increase the players' survival.*false*true*0*0
+A_8*Dragon Ball 5*Created by the Namekian god, these are small orange balls; once all 7 were collected, can summon a mythical beast named Shenron who will increase the players' survival.*false*true*0*0
+A_9*Dragon Ball 6*Created by the Namekian god, these are small orange balls; once all 7 were collected, can summon a mythical beast named Shenron who will increase the players' survival.*false*true*0*0
+A_10*Dragon Ball 7*Created by the Namekian god, these are small orange balls; once all 7 were collected, can summon a mythical beast named Shenron who will increase the players' survival.*false*true*0*0
+A_11*Potara*Earrings that have incredible properties which can increase individuals power levels during a fight.*false*false*0*60
+A-12*Chi-Chi Meal*Made by Goku's wife, these meals pack a heavy punch of nutrients.*false*true*0*50
+A_13*Scouter*Wearable all purpose computers that were created by the Frieza army which used them to measure power levels.*false*true*0*0
+A_14*Champion Belt*This prestigious belt is given to the champion of the World Martial Arts Tournament, etching their name as one of the greatest fighters to have lived.*false*false*0*0
+A_15*This armor is used by the Saiyans in which they incorporated a very light weight design which can withstand even the mightiest of blows.*false*false*0*50
+A_16*Zeno" Button*A button passed down by the great and mighty Zenos. It is said with the press of this button you will get luckier.*false*false*90*0
+A_17*Key Sword*A sword in the shape of a key was created by the gods as a weapon to seal demons. By the way that it looks, it has the power to open up a mysterious location that has yet to be discovered.*false*true*0*0
