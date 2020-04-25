@@ -1,4 +1,5 @@
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -6,8 +7,8 @@ public class Player {
     // Josue Mayorga
 
     private static int currentLocation;
-    private static int hp;
-    private static int attack;
+    private static int hp = 100;
+    private static int attack = 20;
     private static boolean hasEquipedItem;
     private static String equipedItem;
 
@@ -190,7 +191,7 @@ public class Player {
      * Begins fight if monster
      */
     Scanner input = new Scanner(System.in);
-    public void scout(String answer) throws FileNotFoundException {
+    public void scout(String answer) throws IOException {
         for(int i = 0; i < map.getItems().size(); i++)
         {
             if(answer.equalsIgnoreCase(map.getItems().get(i).getItemName()))
@@ -231,7 +232,7 @@ public class Player {
                 int chose = mInput.nextInt();
                 if(chose == 1)
                 {
-                    //Map.getMonsters().get(i).fightMonster();
+                    Map.getMonsters().get(i).fightMonster();
                 }
                 else if(chose == 2)
                 {
