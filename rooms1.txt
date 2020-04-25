@@ -1,0 +1,341 @@
+1
+Goku’s House
+false
+Goku's house, also known as Grandpa Gohan's house, is located at the foot of a forest near Mount Paozu.
+0
+0
+0
+4
+0
+0
+0
+2
+Diablo Desert
+false
+Diablo Desert is a giant, desolate desert that is in the west part of Mount Paozu
+0
+0
+0
+0
+3
+0
+0
+3
+Dragon Rock
+false
+Dragon Rock is a rocky area on Mount Paozu that is home to strong monsters. It is located between Diablo Desert and East District.
+0
+0
+0
+7
+4
+0
+2
+4
+Mount Paozu
+false
+Mount Paozu is the location where Goku is raised by Grandpa Gohan, and where the Dragon Ball story begins.
+0
+0
+0
+7
+5
+1
+3
+5
+East District
+false
+Area on Earth where Grandpa Gohan was settled and where Goku would consequently inhabit during his days as an orphan and his life in adulthood.
+0
+0
+0
+7
+6
+0
+4
+6
+East City
+false
+East City also known as Metro East and the East Capital, is one of the main capitals
+0
+0
+0
+0
+0
+0
+5
+7
+Satan City
+false
+Satan city, called Hercule City, is a city located north of Mount Paozu and south of East City.
+0
+0
+1
+8
+5
+4
+3
+8
+Heated Desert
+false
+It is located south of the Bamboo Forest and north of Satan City, near Diablo Desert.
+0
+0
+0
+9
+0
+7
+0
+9
+Bamboo Forest
+false
+located west of East City, east of the Spinach Wastes, and north of a heated desert.
+0
+0
+1
+13
+15
+8
+11
+10
+Spindletop Flats
+false
+Area on the Earth that has hoodoos, which are large rocks balancing over small spots, staying still.
+0
+0
+0
+11
+0
+0
+0
+11
+Spinach Waste
+false
+Also called Northern Wilderness, is the farmland on Earth where Ostrich Chickens live.
+0
+0
+0
+12
+9
+10
+19
+12
+Mt. Frappe
+false
+A snowy mountain located in the far north section of the Earth, so cold fire turns to ice.
+0
+0
+0
+25
+13
+11
+23
+13
+North Mountains
+false
+Mountain region located north of Spinach Wastes, between Mount Frappe and the Holly Plain
+0
+0
+0
+26
+14
+9
+12
+14
+Holly Plains
+false
+Holly Plain is a snowy area located south of Jingle Village, between the Northern Mountains and the Muscle Tower.
+0
+0
+1
+27
+24
+15
+13
+15
+Muscle Tower
+false
+Muscle Tower is a headquarters of the Red Ribbon Army, located near Jingle Village
+0
+0
+0
+14
+20
+16
+9
+16
+Top floor
+false
+This level is the top level of the tower. It is the control room.
+0
+0
+0
+15
+0
+0
+0
+17
+Northern Wasteland
+false
+Location on Earth that is King Cold's spaceship landing site.
+0
+0
+1
+0
+18
+0
+0
+18
+Training Grounds
+false
+The highland full of strong enemies where Master Mutaito trained himself
+0
+0
+0
+0
+19
+0
+17
+19
+Natade Village
+false
+Located in the Northern Wilderness, west of East City.
+0
+0
+0
+23
+11
+0
+18
+20
+Fire Mountain
+false
+Known as Mt. Frypan is a giant mountain ruled by the Ox-King that is located to the west of the Diablo Desert.
+0
+0
+0
+24
+21
+0
+15
+21
+Fire Cave
+false
+Located by Fire Mountain that can allow passage to the Ox-King's castle
+0
+0
+1
+0
+22
+0
+20
+22
+Ox-King Castle
+false
+A castle with fire to keep intruders out, but the fire is out of control
+0
+0
+0
+0
+0
+0
+21
+23
+Divine Crossing
+false
+Is the cave where Master Mutaito developed the Evil Containment Wave.
+0
+0
+1
+0
+12
+19
+0
+24
+Colonels Silvers Camp
+false
+Temporary base of Colonel Silver and his platoon. It is located in a desert north of East City and south of Jingle Village
+0
+0
+0
+0
+0
+20
+14
+25
+North City
+false
+Known as Metro North, is one of the large metropolis capitals of Earth. It is surrounded by mountains and a forest.
+0
+0
+1
+28
+26
+12
+0
+26
+Dr.Flapp's House
+false
+Residence of Dr. Flappe, a scientist who used to work for the Red Ribbon Army.
+0
+0
+0
+29
+27
+13
+25
+27
+Jingle Village
+false
+A small village in the north, where it is snowy the entire time
+0
+0
+0
+30
+0
+14
+26
+28
+Stadium Upper
+false
+Just outside of the Cell games arena
+0
+0
+0
+0
+29
+25
+0
+29
+Final Boss Stadium
+false
+Cell Games Arena is the martial arts arena that Cell constructed for the Cell Games.
+0
+0
+1
+31
+30
+26
+28
+30
+Snowy Highlands
+false
+An area on Earth located north of Jingle Village
+0
+0
+1
+0
+0
+27
+29
+31
+Final Location
+false
+You are now in the Champion’s Room! Congratulations you have been crowned World Tournament Saga Champion! You win!
+0
+0
+0
+0
+0
+0
+0
