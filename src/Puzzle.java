@@ -1,15 +1,16 @@
 public class Puzzle {
-    //Gretchen Marie
-    private int puzzleID;
+    //Gretchen Marie edited by Mart
+    private String puzzleID;
     private String puzzleName;
     private String puzzleQuestion;
     private String puzzleAnswer;
     private int attempt;
     private String hint;
-    private String reward;
+    private float reward;
+    private String secondAns;
 
-    public Puzzle(int puzzleID, String puzzleName, String puzzleQuestion, String puzzleAnswer,
-                  int attempt, String hint, String reward) {
+    public Puzzle(String puzzleID, String puzzleName, String puzzleQuestion, String puzzleAnswer,
+                  int attempt, String hint, float reward,String SecondAns) {
         this.puzzleID = puzzleID;
         this.puzzleName = puzzleName;
         this.puzzleQuestion = puzzleQuestion;
@@ -17,13 +18,18 @@ public class Puzzle {
         this.attempt = attempt;
         this.hint = hint;
         this.reward = reward;
+        if(SecondAns.equalsIgnoreCase("Null")){
+            this.secondAns = "";
+        }else{
+            this.secondAns = SecondAns;
+        }
     }
 
-    public int getPuzzleID() {
+    public String getPuzzleID() {
         return puzzleID;
     }
 
-    public void setPuzzleID(int puzzleID) {
+    public void setPuzzleID(String puzzleID) {
         this.puzzleID = puzzleID;
     }
 
@@ -67,11 +73,11 @@ public class Puzzle {
         this.hint = hint;
     }
 
-    public String getReward() {
+    public float getReward() {
         return reward;
     }
 
-    public void setReward(String reward) {
+    public void setReward(Float reward) {
         this.reward = reward;
     }
 }

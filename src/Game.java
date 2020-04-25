@@ -1,8 +1,10 @@
 import java.io.*;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Game {
     //Making a change through AnasBranch on git
+    //Puzzle Reader by Mart
     //Reading in files added through JosueBranch
 
     /**
@@ -110,6 +112,7 @@ public class Game {
         } catch (FileNotFoundException e) {
             System.out.println("No file found");
         }
+        ArrayList<Puzzle> puzzles = puzzleReader();
 
         /**
          * Instructions
@@ -269,6 +272,56 @@ public class Game {
             }
         }
         input.close();
+    }
+
+    private ArrayList<Puzzle> puzzleReader(){
+
+        ArrayList<Puzzle> puzzles;
+        //No puzzle control Vars
+
+        puzzles = new ArrayList<Puzzle>();
+        String desc = "";
+        String hint = "";
+
+        FileReader puzzle;
+        try{
+            puzzle = new FileReader("Puzzle.txt");
+            BufferedReader br = new BufferedReader(puzzle);
+
+            //no puzzle control vars skip first line
+            br.readLine();
+
+            //set up puzzles
+            String puzzleText = br.readLine();
+            do{
+                //get puzzle
+                String[] puzzleParams = puzzleText.split("\\*");
+                //get puzzle description
+                String check = br.readLine();
+                do{
+                    desc = desc + check + "\n";
+                    check = br.readLine();
+                }while(!check.equals("***"));
+                //get hint
+                check = br.readLine();
+                do {
+                    hint = hint + check;
+                    check = br.readLine();
+                }while(!check.equals("***"));
+                //add puzzle
+                Puzzle p = new Puzzle(puzzleParams[0],puzzleParams[1],desc,puzzleParams[2],3,hint,
+                        Float.parseFloat(puzzleParams[3]),puzzleParams[4]);
+                puzzles.add(p);
+                desc = "";
+                hint = "";
+
+                puzzleText = br.readLine();
+            }while(!puzzleText.equals("End"));
+        }catch (IOException e){
+            System.out.println(e);
+        }
+
+        return puzzles;
     }
 
 }
