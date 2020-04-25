@@ -85,7 +85,7 @@ public class Player {
             System.out.println("The room has a puzzle");
             for(int i = 0; i < map.getPuzzles().size(); i++)
             {
-                if(Map.getRooms().get(currentLocation).getRoomID() == map.getPuzzles().get(i).getPuzzleID())
+                if((Map.getRooms().get(currentLocation).getRoomID()+"").equals(map.getPuzzles().get(i).getPuzzleID()))//this def needs to be changed
                 {
                     System.out.println("Puzzle: " + map.getPuzzles().get(i).getPuzzleName());
                 }

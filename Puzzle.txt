@@ -1,0 +1,79 @@
+Puzzle*Text*File*
+P_1*Buu Reincarnated*Uub*0.7*Null
+After Goku Defeats Majin Buu, he
+wishes that Buu is reincarnated as a
+good person. Goku’s wish is granted
+and Buu is reincarnated, but with a
+different name. What is this name?
+***
+Flip Buu’s name around
+***
+P_2*Gogeta Formation*Fusion dance*.09*Null
+Whenever Goku and Vegeta want to
+fuse together into Gogeta, what
+technique do they have to perform?
+***
+It's a type of dance
+***
+P_3*Potara Result*Vegito*.10*Vegetto
+When Goku and Vegeta receive the Potara rings, they use the rings and
+fuse together into a new, more powerful fighter. However, unlike
+Goku and Vegeta’s standard fusion technique, the fighter that results
+from the Potara fusion is not Gogeta.
+What is this new Potara fusion fighter’s name?
+***
+It is very similar to Vegeta's name
+***
+P_4*Goten's Mistake*Kamekameha*0.12*Null
+When fighting against Trunks in the world tournament, Goten wants to
+show off a new technique that he learned and then launches an energy
+beam at Trunks. However, Goten mispronounces the name of the
+technique. What name does Goten call the technique?
+***
+Puzzle hint MultiLine
+***
+P_5*Goku's Power Level*9000*0.14*Null
+When Goku first powers up against
+Vegeta, Vegeta’s scouter reads that
+Goku’s power level is over a certain
+number. What is that number?
+***
+Subtract 5,500 from 10,000 and then
+multiply that difference by 2.
+What is the number?
+***
+P_6*Gohan’s Identity*Super Saiyaman*15*Null
+When Gohan decided to become a
+vigilante and fight crime around the
+city, what is the name of the
+superhero that Gohan disguises
+himself as?
+***
+Combine Superman with Super Saiyan
+***
+P_7*Majin Ninja*Babidi*0.16*Null
+In the Majin Saga, there is a wizard
+who goes around and possesses
+people into becoming his henchmen,
+including Vegeta. Who is this wizard?
+***
+His name rhymes
+with “tragedy”.
+***
+P_8*Byond The Mind*Ultra Instinct*0.17*Null
+When fighting against Jiren in the
+Tournament of Power (DragonBall
+Super Arc), Goku reaches a state
+beyond the conscious mind where his
+body parts each act and react on their
+own. What is this state called?
+***
+It is a state beyond
+normal instinct.
+***
+End
+PID*Name*answer*percent rewared*Second Answer
+Puzzle Description multiLine
+***
+Puzzle hint MultiLine
+***
