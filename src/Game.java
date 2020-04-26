@@ -139,7 +139,8 @@ public class Game {
             System.out.println("No file found");
         }
         ArrayList<Puzzle> puzzles = puzzleReader();
-
+        //set random puzzle based on rooms
+        Map.randomizePuzzles(puzzles);
         /**
          * Instructions
          */

@@ -15,6 +15,7 @@ public class Room {
 	private int east;
 	private int south;
 	private int west;
+	public Puzzle rPuzzle;
 
 	/**
 	 * Constructor Room
@@ -172,6 +173,14 @@ public class Room {
 	 */
 	public void setHasMonster(int hasMonster) {
 		this.hasMonster = hasMonster;
+	}
+
+	public Puzzle getrPuzzle() {
+		return rPuzzle;
+	}
+
+	public void setPuzzle(Puzzle rPuzzle) {
+		this.rPuzzle = rPuzzle;
 	}
 }
 
