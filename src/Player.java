@@ -47,6 +47,26 @@ public class Player {
         return inventory;
     }
 
+    public static void mainHelp(){
+        System.out.println("===========================================================================================");
+        System.out.println("Help");
+        System.out.println("Pick option by entering number next to it.");
+        System.out.println("Move by entering a direction (example north or n)");
+        System.out.println("Search area- Check area for items,puzzles or monsters");
+        System.out.println("Inventory- Check Player inventory");
+        System.out.println("End game at any time by entering 'Exit'");
+        System.out.println("Enter 'help' for command menu");
+        System.out.println("============================================================================================");
+        System.out.println();
+
+    }
+    public static void fightHelp(){
+        System.out.println("Select 1.Fight to engage monster select 2.ignore and skip monster.");
+        System.out.println("1.Attack -- will attack monster and monster retaliate with random move");
+        System.out.println("2.Use Health -- Use a consumable item to gain health-Input name of item");
+        System.out.println("3.Equip -- Go to equipment menu");
+    }
+
     /**
      * Method PrintInventory
      *
@@ -245,6 +265,10 @@ public class Player {
                     Map.getRooms().get(getCurrentLocation()).setHasMonster(0);
                     System.out.println("Monster is gone.");
                 }
+            }
+            else if(answer.equalsIgnoreCase("help"))
+            {
+                fightHelp();
             }
         }
     }

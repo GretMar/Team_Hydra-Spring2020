@@ -47,7 +47,7 @@ public class Monster {
                 System.out.println("Player Hp: " + Player.getHp() + " Attack: " + Player.getAttack());
                 System.out.println("What will you do (enter number): ");
 
-                System.out.println("1.Attack \n2.Drink potion \n3.Equip Item");
+                System.out.println("1.Attack \n2.Use health item \n3.Equip Item");
                 int chose1 = fInput.nextInt();
                 if (chose1 == 1) {
                     int max = 4;

@@ -314,6 +314,10 @@ public class Game {
                 else if (userInput.equalsIgnoreCase("exit")) {
                     return;
                 }
+                else if(userInput.equalsIgnoreCase("help"))
+                {
+                    Player.mainHelp();
+                }
                 else {
                     System.out.println("Invalid input please try again.");
                 }
