@@ -7,9 +7,9 @@ public class Map {
 
     private static ArrayList<Monster> monsters = new ArrayList<>();
 
-    private ArrayList<Puzzle> puzzles = new ArrayList<>();
+    private static ArrayList<Puzzle> puzzles = new ArrayList<>();
 
-    private ArrayList<Items> items = new ArrayList<>();
+    private static ArrayList<Items> items = new ArrayList<>();
 
     /**
      * Method: getRooms()
