@@ -7,8 +7,9 @@ public class Player {
     // Josue Mayorga
 
     private static int currentLocation;
-    private static int hp = 100;
-    private static int attack = 20;
+    private static int playerId;
+    private static int hp;
+    private static int attack;
     private static boolean hasEquipedItem;
     private static String equipedItem;
 
@@ -21,7 +22,8 @@ public class Player {
 
     public static void addplayer(Player p){player.add(p);}
 
-    Player(int hp, int attack,boolean hasEquipedItem, String equipedItem) {
+    Player(int playerId,int hp, int attack,boolean hasEquipedItem, String equipedItem) {
+        this. playerId = playerId;
         this.hp = hp;
         this.attack = attack;
         this.hasEquipedItem = hasEquipedItem;
@@ -285,5 +287,13 @@ public class Player {
 
     public static void setCurrentLocation(int currentLocation) {
         Player.currentLocation = currentLocation;
+    }
+
+    public static int getPlayerId() {
+        return playerId;
+    }
+
+    public static void setPlayerId(int playerId) {
+        Player.playerId = playerId;
     }
 }
