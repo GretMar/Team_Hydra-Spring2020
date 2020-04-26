@@ -7,8 +7,9 @@ public class Player {
     // Josue Mayorga
 
     private static int currentLocation;
-    private static int hp = 100;
-    private static int attack = 20;
+    private static int playerId;
+    private static int hp;
+    private static int attack;
     private static boolean hasEquipedItem;
     private static String equipedItem;
 
@@ -21,7 +22,8 @@ public class Player {
 
     public static void addplayer(Player p){player.add(p);}
 
-    Player(int hp, int attack,boolean hasEquipedItem, String equipedItem) {
+    Player(int playerId,int hp, int attack,boolean hasEquipedItem, String equipedItem) {
+        this. playerId = playerId;
         this.hp = hp;
         this.attack = attack;
         this.hasEquipedItem = hasEquipedItem;
@@ -43,6 +45,26 @@ public class Player {
 
     public static ArrayList<Items> getInventory(){
         return inventory;
+    }
+
+    public static void mainHelp(){
+        System.out.println("===========================================================================================");
+        System.out.println("Help");
+        System.out.println("Pick option by entering number next to it.");
+        System.out.println("Move by entering a direction (example north or n)");
+        System.out.println("Search area- Check area for items,puzzles or monsters");
+        System.out.println("Inventory- Check Player inventory");
+        System.out.println("End game at any time by entering 'Exit'");
+        System.out.println("Enter 'help' for command menu");
+        System.out.println("============================================================================================");
+        System.out.println();
+
+    }
+    public static void fightHelp(){
+        System.out.println("Select 1.Fight to engage monster select 2.ignore and skip monster.");
+        System.out.println("1.Attack -- will attack monster and monster retaliate with random move");
+        System.out.println("2.Use Health -- Use a consumable item to gain health-Input name of item");
+        System.out.println("3.Equip -- Go to equipment menu");
     }
 
     /**
@@ -261,6 +283,10 @@ public class Player {
                     System.out.println("Monster is gone.");
                 }
             }
+            else if(answer.equalsIgnoreCase("help"))
+            {
+                fightHelp();
+            }
         }
     }
 
@@ -302,5 +328,13 @@ public class Player {
 
     public static void setCurrentLocation(int currentLocation) {
         Player.currentLocation = currentLocation;
+    }
+
+    public static int getPlayerId() {
+        return playerId;
+    }
+
+    public static void setPlayerId(int playerId) {
+        Player.playerId = playerId;
     }
 }

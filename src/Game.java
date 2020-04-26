@@ -52,7 +52,29 @@ public class Game {
     		}catch (IOException e) {
     			System.out.println("File Could not be accessed.");
     		}
+        File playerFile = new File("players1.txt");
+        Scanner playerReader = null;
+        try{
+            playerReader = new Scanner(playerFile);
+            while ((playerReader.hasNextLine())){
+                int playerId = Integer.parseInt(playerReader.nextLine());
+                int playerHp = Integer.parseInt(playerReader.nextLine());
+                //System.out.println(playerHp);
+                int playerAttack = Integer.parseInt(playerReader.nextLine());
+                //System.out.println(playerAttack);
+                String temp = playerReader.nextLine();
+                boolean hasEquipedItem = Boolean.parseBoolean(temp);
+                //System.out.println(hasEquipedItem);
+                String equipmentName = playerReader.nextLine();
+                //System.out.println(equipmentName);
 
+                Player.addplayer(new Player(playerId,playerHp,playerAttack,hasEquipedItem,equipmentName));
+                //System.out.println(player.getPlayer().get(0).getHp());
+            }
+        }
+        catch (FileNotFoundException e) {
+            System.out.println("No file found");
+        }
         File monsterFile = new File("monsters1.txt");
         try {
             Scanner scanner = new Scanner(monsterFile).useDelimiter(":");
@@ -291,6 +313,10 @@ public class Game {
                 }
                 else if (userInput.equalsIgnoreCase("exit")) {
                     return;
+                }
+                else if(userInput.equalsIgnoreCase("help"))
+                {
+                    Player.mainHelp();
                 }
                 else {
                     System.out.println("Invalid input please try again.");
