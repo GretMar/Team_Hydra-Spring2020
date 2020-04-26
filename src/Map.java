@@ -106,8 +106,11 @@ public class Map {
                 do{
                     p = rInt.nextInt(ran);
                     System.out.println(p);
-                }while (Arrays.asList(deadNums).contains(p));
+                }               
+                while (Arrays.asList(deadNums).contains(p));
+                //System.out.println("Here1");
                 deadNums[count] = p;
+                //System.out.println("Here");
                 r.setItem(i.get(p));
                 count++;
             }

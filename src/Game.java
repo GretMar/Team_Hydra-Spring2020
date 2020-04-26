@@ -28,32 +28,7 @@ public class Game {
          * open text file
          */
         File textFile = new File("rooms1.txt");
-        try {
-    		BufferedReader reader1 = new BufferedReader(new FileReader("items.txt"));
-    		File f1 = new File("items.txt");
-    		String line1 = reader1.readLine();
-    		if(!f1.exists()) {
-    			throw new FileNotFoundException();
-    		}
-    		itemElements = new ArrayList<Items>();
-    		while(line1 != null) {
-    			//System.out.println(line1);
-    			String[] tokens1 = line1.trim().split("\\*");
-    			Items y = new Items(Integer.parseInt(tokens1[0]), tokens1[1], tokens1[2], Boolean.parseBoolean(tokens1[3]),
-    						Boolean.parseBoolean(tokens1[4]), Integer.parseInt(tokens1[5]), Integer.parseInt(tokens1[6]));
-    			Map.addItems(y);
-    			//itemElements.add(y);
-    			
-    			line1 = reader1.readLine();
-    			
-    		}
-    		}
-    		catch (FileNotFoundException e){
-    			System.out.println("File not found!");			
-    		}catch (IOException e) {
-    			System.out.println("File Could not be accessed.");
-    		}
-
+        
         File monsterFile = new File("monsters1.txt");
         try {
             Scanner scanner = new Scanner(monsterFile).useDelimiter(":");
@@ -139,9 +114,43 @@ public class Game {
         } catch (FileNotFoundException e) {
             System.out.println("No file found");
         }
+        
+        try {
+    		BufferedReader reader1 = new BufferedReader(new FileReader("items.txt"));
+    		File f1 = new File("items.txt");
+    		String line1 = reader1.readLine();
+    		if(!f1.exists()) {
+    			throw new FileNotFoundException();
+    		}
+    		itemElements = new ArrayList<Items>();
+    		while(line1 != null) {
+    			//System.out.println(line1);
+    			String[] tokens1 = line1.trim().split("\\*");
+    			Items y = new Items(Integer.parseInt(tokens1[0]), tokens1[1], tokens1[2], Boolean.parseBoolean(tokens1[3]),
+    						Boolean.parseBoolean(tokens1[4]), Integer.parseInt(tokens1[5]), Integer.parseInt(tokens1[6]));
+    			Map.addItems(y);
+    			itemElements.add(y);
+    			
+    			line1 = reader1.readLine();
+    			
+
+    		}
+
+	        ArrayList<Items> items = itemElements;
+	        Map.randomizeItems(items);
+			
+    		}
+    		catch (FileNotFoundException e){
+    			System.out.println("File not found!");			
+    		}catch (IOException e) {
+    			System.out.println("File Could not be accessed.");
+    		}
+
+        
         ArrayList<Puzzle> puzzles = puzzleReader();
         //set random puzzle based on rooms
         Map.randomizePuzzles(puzzles);
+        
         /**
          * Instructions
          */
