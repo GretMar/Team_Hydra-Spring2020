@@ -84,10 +84,6 @@ public class Map {
         items.add(i);
     }
 
-
-
-
-
     public static ArrayList<Monster> getMonsters(){
         return monsters;
     }

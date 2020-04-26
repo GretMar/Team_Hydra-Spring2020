@@ -63,7 +63,8 @@ public class Player {
     }
     /**
      * Method inspect
-     * Checks if an Item, puzzle, monster are in the room
+     * Checks if an Item,
+     * .+6puzzle, monster are in the room52
      * and displays it to the player
      */
     public void inspect()
@@ -202,7 +203,7 @@ public class Player {
                 System.out.println(inventory.get(i).getItemDesc());
             }
         }
-        for(int i = 0; i < map.getPuzzles().size(); i++)
+        /*for(int i = 0; i < map.getPuzzles().size(); i++) changing the original puzzle solve method
         {
             if(answer.equalsIgnoreCase(map.getPuzzles().get(i).getPuzzleName()))
             {
@@ -210,6 +211,13 @@ public class Player {
                 String ans = input.nextLine();
                 // map.solveThePuzzle(ans);
 
+            }
+        }*/
+        Room temp = map.getRooms().get(currentLocation);
+        if(temp.getHasPuzzle() != 0){
+            if(temp.rPuzzle.getPuzzleName().equalsIgnoreCase(answer)){
+                temp.getrPuzzle().solvePuzzle();
+                System.out.println("solve puzzle works");
             }
         }
         for(int i = 0; i < Map.getMonsters().size(); i++)
