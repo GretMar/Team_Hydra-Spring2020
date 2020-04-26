@@ -72,9 +72,9 @@ public class Player {
         {
             System.out.println("==================================================================");
             System.out.print("The items in the room are: ");
-            for(int i = 0; i < map.getItems().size(); i++) {
-                if(Map.getRooms().get(currentLocation).getRoomID() == map.getItems().get(i).getItemId())
-                    System.out.print("[" +map.getItems().get(i).getItemName() + "] ");
+            for(int i = 0; i < Map.getItems().size(); i++) {
+             //   if(Map.getRooms().get(currentLocation).getRoomID() == map.getItems().get(i).getItemId())
+                    System.out.print("[" +Map.getItems().get(i).getItemName() + "] ");
             }
         }
         else if(Map.getRooms().get(currentLocation).getHasItem() == 0) {

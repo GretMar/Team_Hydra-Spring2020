@@ -7,9 +7,9 @@ public class Map {
 
     private static ArrayList<Monster> monsters = new ArrayList<>();
 
-    private ArrayList<Puzzle> puzzles = new ArrayList<>();
+    private static ArrayList<Puzzle> puzzles = new ArrayList<>();
 
-    private ArrayList<Items> items = new ArrayList<>();
+    private static ArrayList<Items> items = new ArrayList<>();
 
     /**
      * Method: getRooms()
@@ -47,7 +47,7 @@ public class Map {
         }
     }
 
-    public  ArrayList<Puzzle> getPuzzles(){
+    public static ArrayList<Puzzle> getPuzzles(){
         return puzzles;
     }
     /**
@@ -55,7 +55,7 @@ public class Map {
      * adds to arrayList of puzzles
      * @param p
      */
-    public void addPuzzles(Puzzle p){
+    public static void addPuzzles(Puzzle p){
         puzzles.add(p);
     }
     /**
@@ -72,7 +72,7 @@ public class Map {
      * Method getItems()
      * @return items
      */
-    public ArrayList<Items> getItems(){
+    public static ArrayList<Items> getItems(){
         return items;
     }
     /**
@@ -80,7 +80,7 @@ public class Map {
      * adds items to ArrayList of Items
      * @param i
      */
-    public void addItems(Items i){
+    public static void addItems(Items i){
         items.add(i);
     }
 
