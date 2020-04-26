@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Random;
 
 public class Map {
     private static ArrayList<Room> rooms = new ArrayList<>();
@@ -92,4 +94,26 @@ public class Map {
     public static void addMonster(Monster m){ monsters.add(m);}
 
     public static void removeMonster(Monster m){monsters.remove(m);}
+
+    public static void randomizePuzzles(ArrayList<Puzzle> p){
+        //System.out.println("test");
+        int count = 0;
+        Random rInt = new Random();
+        int ran = p.size();
+        int[] deadNums = new int[ran];
+        for(Room r:rooms){
+            if(r.getHasPuzzle()!=0){
+                int i;
+                do{
+                    i = rInt.nextInt(ran);
+                    System.out.println(i);
+                }while (Arrays.asList(deadNums).contains(i));
+                deadNums[count] = i;
+                r.setPuzzle(p.get(i));
+                count++;
+                //System.out.println(count);
+            }
+            //System.out.println("test2");
+        }
+    }
 }

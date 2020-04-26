@@ -14,7 +14,7 @@ Diablo Desert
 false
 Diablo Desert is a giant, desolate desert that is in the west part of Mount Paozu
 0
-0
+1
 0
 0
 3
@@ -47,7 +47,7 @@ East District
 false
 Area on Earth where Grandpa Gohan was settled and where Goku would consequently inhabit during his days as an orphan and his life in adulthood.
 0
-0
+1
 0
 7
 6

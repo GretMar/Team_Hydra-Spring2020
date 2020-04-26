@@ -36,12 +36,10 @@ public class Game {
     			throw new FileNotFoundException();
     		}
     		itemElements = new ArrayList<Items>();
-    		
     		while(line1 != null) {
     			//System.out.println(line1);
-    			String[] tokens1 = line1.trim().split("~");
-    			
-    			Items y = new Items(Integer.parseInt(tokens1[0]), tokens1[1], tokens1[2], Boolean.parseBoolean(tokens1[3]), 
+    			String[] tokens1 = line1.trim().split("\\*");
+    			Items y = new Items(Integer.parseInt(tokens1[0]), tokens1[1], tokens1[2], Boolean.parseBoolean(tokens1[3]),
     						Boolean.parseBoolean(tokens1[4]), Integer.parseInt(tokens1[5]), Integer.parseInt(tokens1[6]));
     			itemElements.add(y);
     			
@@ -60,32 +58,32 @@ public class Game {
             Scanner scanner = new Scanner(monsterFile).useDelimiter(":");
             while (scanner.hasNext()) {
                 int monsterId = scanner.nextInt();
-                System.out.println(monsterId);
+                //System.out.println(monsterId);
                 String mName = scanner.next();
 
-                System.out.println(mName);
+                //System.out.println(mName);
                 String mdes = scanner.next();
-                System.out.println(mdes);
+                //System.out.println(mdes);
                 int location = Integer.parseInt(String.valueOf(scanner.nextInt()));
-                System.out.println(location);
+                //System.out.println(location);
                 int mHealth = scanner.nextInt();
-                System.out.println(mHealth);
+                //System.out.println(mHealth);
                 String attack1 = scanner.next();
-                System.out.println(attack1);
+                //System.out.println(attack1);
                 int attackdam1 = scanner.nextInt();
-                System.out.println(attackdam1);
+                //System.out.println(attackdam1);
                 String attack2 = scanner.next();
-                System.out.println(attack2);
+                //System.out.println(attack2);
                 int attackdam2 = scanner.nextInt();
-                System.out.println(attackdam2);
+                //System.out.println(attackdam2);
                 String attack3 = scanner.next();
-                System.out.println(attack3);
+                //System.out.println(attack3);
                 int attackdam3 = scanner.nextInt();
-                System.out.println(attackdam3);
+                //System.out.println(attackdam3);
                 String attack4 = scanner.next();
-                System.out.println(attack4);
+                //System.out.println(attack4);
                 int attackdam4 = scanner.nextInt();
-                System.out.println(attackdam4);
+                //System.out.println(attackdam4);
 
                 Map.addMonster(new Monster(monsterId,mName,mdes,location,mHealth,
                 attack1,attackdam1,attack2,attackdam2,attack3,attackdam3,attack4,attackdam4));
@@ -141,7 +139,8 @@ public class Game {
             System.out.println("No file found");
         }
         ArrayList<Puzzle> puzzles = puzzleReader();
-
+        //set random puzzle based on rooms
+        Map.randomizePuzzles(puzzles);
         /**
          * Instructions
          */
