@@ -2,11 +2,11 @@ Puzzle*Text*File*
 P_1*Buu Reincarnated*Uub*0.7*Null
 After Goku Defeats Majin Buu, he
 wishes that Buu is reincarnated as a
-good person. Gokuâ€™s wish is granted
+good person. Gokufs wish is granted
 and Buu is reincarnated, but with a
 different name. What is this name?
 ***
-Flip Buuâ€™s name around
+Flip Buufs name around
 ***
 P_2*Gogeta Formation*Fusion dance*.09*Null
 Whenever Goku and Vegeta want to
@@ -18,9 +18,9 @@ It's a type of dance
 P_3*Potara Result*Vegito*.10*Vegetto
 When Goku and Vegeta receive the Potara rings, they use the rings and
 fuse together into a new, more powerful fighter. However, unlike
-Goku and Vegetaâ€™s standard fusion technique, the fighter that results
+Goku and Vegetafs standard fusion technique, the fighter that results
 from the Potara fusion is not Gogeta.
-What is this new Potara fusion fighterâ€™s name?
+What is this new Potara fusion fighterfs name?
 ***
 It is very similar to Vegeta's name
 ***
@@ -34,15 +34,15 @@ Puzzle hint MultiLine
 ***
 P_5*Goku's Power Level*9000*0.14*Null
 When Goku first powers up against
-Vegeta, Vegetaâ€™s scouter reads that
-Gokuâ€™s power level is over a certain
+Vegeta, Vegetafs scouter reads that
+Gokufs power level is over a certain
 number. What is that number?
 ***
 Subtract 5,500 from 10,000 and then
 multiply that difference by 2.
 What is the number?
 ***
-P_6*Gohanâ€™s Identity*Super Saiyaman*15*Null
+P_6*Gohanfs Identity*Super Saiyaman*15*Null
 When Gohan decided to become a
 vigilante and fight crime around the
 city, what is the name of the
@@ -58,7 +58,7 @@ people into becoming his henchmen,
 including Vegeta. Who is this wizard?
 ***
 His name rhymes
-with â€œtragedyâ€.
+with gtragedyh.
 ***
 P_8*Byond The Mind*Ultra Instinct*0.17*Null
 When fighting against Jiren in the

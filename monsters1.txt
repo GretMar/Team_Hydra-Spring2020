@@ -4,11 +4,11 @@ curly afro and mustache. He is wearing a martial arts
 uniform. You soon discover that this is Mr. Satan. He
 is the current World Martial Arts Champion. Mr. Satan
 is your final boss that you must defeat to win the
-game. Mr. Satan‚Äôs strengths are his skill level in
+game. Mr. SatanÅfs strengths are his skill level in
 martial arts and his physical strength.:29:110:
 -Mr. Satan performs a palm strike
 to your face. You lose 15 HP:15:
--Mr. Satan doesn‚Äôt like what you
+-Mr. Satan doesnÅft like what you
 did, he retaliates by pushing you to
 the ground. You lose 10 HP.:10:
 - Mr. Satan draws his axe and
@@ -19,9 +19,9 @@ he pulls out his club and smacks you
 on the head. You lose 15 HP.:15:2:Piccolo:
 You see in the distance a green tall muscular man
 with large ears and a chiseled face. His name is
-Piccolo. He appears grumpy and doesn‚Äôt look like he
+Piccolo. He appears grumpy and doesnÅft look like he
 wants to be bothered. But who knows what he is
-going to do if you don‚Äôt attack.:17:80:
+going to do if you donÅft attack.:17:80:
 -Piccolo hates people that initiate
 contact. Piccolo throws a solid punch
 at you. You lose 10 HP:10:
@@ -42,11 +42,11 @@ You lose 10 HP:10:
 - You make Kibito angry. He kicks
 you in the side and you buckle over.
 You lose 10 HP.:15:
-- You don‚Äôt even see it coming but
+- You donÅft even see it coming but
 you are stabbed in the stomach.
 There is so much blood. You lose 25
 HP.:25:
-- ‚ÄúOuch‚Äù says Kibito. He hits you in
+- ÅgOuchÅh says Kibito. He hits you in
 the face. You lose 5 HP.:5:4:Killa:
 Killa is a large brown skinned man with his wrists
 wrapped. You see him out of the corner of your eye
@@ -111,7 +111,7 @@ that has fair skin. You see her towards the corner of
 your location. She has shoulder length blonde hair
 and is wearing dark jeans with a white t-shirt and
 black jean vest overtop. She looks like a badass. Lets
-hope she doesn‚Äôt fight like one too though.:9:55:
+hope she doesnÅft fight like one too though.:9:55:
 - Android 18 catches you off guard
 and sweeps your legs and you fall to
 the ground. You quickly scamper to
@@ -130,7 +130,7 @@ at you. You only lose 1 HP.:1:8:Dabura:
 Dabura is the king of the Demon Realm. He is
 standing tall and looks very scary. He has red skin,
 goatee and horns and resembles Satan himself. He
-doesn‚Äôt really look like someone you want to mess
+doesnÅft really look like someone you want to mess
 with.:30:98:
 - Dabura throws an uppercut to your
 stomach, You lose 10 HP.:10:
