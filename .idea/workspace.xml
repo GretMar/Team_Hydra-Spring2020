@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40bfc29d-043a-4783-af2c-14557fe34170" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/out/production/GroupGame/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GroupGame/Game.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GroupGame/Map.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GroupGame/Map.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GroupGame/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GroupGame/Room.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rooms1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/rooms1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Map.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Room.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="140" column="40" selection-start-line="140" selection-start-column="40" selection-end-line="140" selection-end-column="40" />
+            <state relative-caret-position="1933">
+              <caret line="328" column="32" selection-start-line="328" selection-start-column="32" selection-end-line="328" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#6044#7737#1" />
@@ -33,7 +28,6 @@
                 <element signature="e#9951#11939#1" />
                 <element signature="e#12001#12048#1" />
                 <element signature="e#12070#12164#1" />
-                <element signature="method#puzzleReader#0;class#Game#0" />
               </folding>
             </state>
           </provider>
@@ -51,11 +45,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Map.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="98" column="10" selection-start-line="98" selection-start-column="10" selection-end-line="98" selection-end-column="10" />
+            <state relative-caret-position="299">
+              <caret line="110" column="18" selection-start-line="110" selection-start-column="18" selection-end-line="110" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tester.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -257,7 +260,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22572000" />
+    <option name="totallyTimeSpent" value="25160000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="752" extended-state="6" />
@@ -272,7 +275,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.14862682" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23101777" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -415,10 +418,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/tester.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="140" column="40" selection-start-line="140" selection-start-column="40" selection-end-line="140" selection-end-column="40" />
+        <state relative-caret-position="1933">
+          <caret line="328" column="32" selection-start-line="328" selection-start-column="32" selection-end-line="328" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#6044#7737#1" />
@@ -426,15 +436,14 @@
             <element signature="e#9951#11939#1" />
             <element signature="e#12001#12048#1" />
             <element signature="e#12070#12164#1" />
-            <element signature="method#puzzleReader#0;class#Game#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Map.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="98" column="10" selection-start-line="98" selection-start-column="10" selection-end-line="98" selection-end-column="10" />
+        <state relative-caret-position="299">
+          <caret line="110" column="18" selection-start-line="110" selection-start-column="18" selection-end-line="110" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

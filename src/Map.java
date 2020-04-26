@@ -111,7 +111,7 @@ public class Map {
                 deadNums[count] = i;
                 r.setPuzzle(p.get(i));
                 count++;
-                System.out.println(count);
+                //System.out.println(count);
             }
             //System.out.println("test2");
         }
