@@ -217,6 +217,8 @@ public class Player {
         if(temp.getHasPuzzle() != 0){
             if(temp.rPuzzle.getPuzzleName().equalsIgnoreCase(answer)){
                 temp.getrPuzzle().solvePuzzle();
+                temp.setPuzzle(null);
+                temp.setHasPuzzle(0);
             }
         }
         for(int i = 0; i < Map.getMonsters().size(); i++)

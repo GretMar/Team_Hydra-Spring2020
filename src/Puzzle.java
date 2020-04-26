@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Puzzle {
     //Gretchen Marie edited by Mart
     private String puzzleID;
@@ -82,8 +84,28 @@ public class Puzzle {
     }
 
     public float solvePuzzle(){
-        float result = 0;
-
-        return result;
+        int curA=0;
+        Scanner in = new Scanner(System.in);
+        System.out.println(puzzleQuestion);
+        boolean active = true;
+        String response;
+        do{
+            System.out.print("Please type a solution: ");
+            response = in.nextLine();
+            if(response.equalsIgnoreCase(puzzleAnswer)||response.equalsIgnoreCase(secondAns)){
+                System.out.println("you solved the puzzle correctly!");
+                active = false;
+            }else{
+                curA++;
+                System.out.println("the answer you provided is wrong, you still have "+(attempt-curA)+
+                        " remaining attempts. Try one more time ");
+                if (attempt - curA == 0){
+                    active = false;
+                    reward = 0f;
+                    System.out.println("you failed the puzzle!");
+                }
+            }
+        }while(active);
+        return reward;
     }
 }
