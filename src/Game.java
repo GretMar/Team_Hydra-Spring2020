@@ -266,7 +266,7 @@ public class Game {
                         {
                             player.playerStatus();
                             Player.printInventory();
-                            System.out.println(("What do you want too unequipped: "));
+                            System.out.println(("What do you want to unequip: "));
                             String ue = eq.nextLine();
                             Items.unEquip(ue);
                         }

@@ -95,6 +95,25 @@ public class Map {
 
     public static void removeMonster(Monster m){monsters.remove(m);}
 
+    public static void randomizeItems(ArrayList<Items> i) {
+    	int count = 0;
+        Random rInt = new Random();
+        int ran = i.size();
+        int[] deadNums = new int[ran];
+        for(Room r:rooms){
+            if(r.getHasItem()!=0){
+                int p;
+                do{
+                    p = rInt.nextInt(ran);
+                    System.out.println(p);
+                }while (Arrays.asList(deadNums).contains(p));
+                deadNums[count] = p;
+                r.setItem(i.get(p));
+                count++;
+            }
+        }
+    }
+    
     public static void randomizePuzzles(ArrayList<Puzzle> p){
         //System.out.println("test");
         int count = 0;
