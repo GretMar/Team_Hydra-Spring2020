@@ -106,7 +106,7 @@ public class Map {
                 int i;
                 do{
                     i = rInt.nextInt(ran);
-                    System.out.println(i);
+                    //System.out.println(i);
                 }while (Arrays.asList(deadNums).contains(i));
                 deadNums[count] = i;
                 r.setPuzzle(p.get(i));
