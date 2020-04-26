@@ -80,4 +80,10 @@ public class Puzzle {
     public void setReward(Float reward) {
         this.reward = reward;
     }
+
+    public float solvePuzzle(){
+        float result = 0;
+
+        return result;
+    }
 }

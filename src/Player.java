@@ -63,7 +63,8 @@ public class Player {
     }
     /**
      * Method inspect
-     * Checks if an Item, puzzle, monster are in the room
+     * Checks if an Item,
+     * .+6puzzle, monster are in the room52
      * and displays it to the player
      */
     public void inspect()
@@ -80,16 +81,12 @@ public class Player {
         else if(Map.getRooms().get(currentLocation).getHasItem() == 0) {
             System.out.println("No items in the room");
         }
-        if(Map.getRooms().get(currentLocation).getHasPuzzle() == 1)
+        if(Map.getRooms().get(currentLocation).getHasPuzzle() != 0)
         {
             System.out.println("The room has a puzzle");
-            for(int i = 0; i < map.getPuzzles().size(); i++)
-            {
-                if((Map.getRooms().get(currentLocation).getRoomID()+"").equals(map.getPuzzles().get(i).getPuzzleID()))//this def needs to be changed
-                {
-                    System.out.println("Puzzle: " + map.getPuzzles().get(i).getPuzzleName());
-                }
-            }
+            //if(()//getRoomID()+"").equals(map.getPuzzles().get(i).getPuzzleID()))//this def needs to be changed
+            System.out.println("Puzzle name: " + Map.getRooms().get(currentLocation).getrPuzzle().getPuzzleName());
+
         }
         if(Map.getRooms().get(currentLocation).getHasMonster() == 1)
         {
@@ -206,7 +203,7 @@ public class Player {
                 System.out.println(inventory.get(i).getItemDesc());
             }
         }
-        for(int i = 0; i < map.getPuzzles().size(); i++)
+        /*for(int i = 0; i < map.getPuzzles().size(); i++) changing the original puzzle solve method
         {
             if(answer.equalsIgnoreCase(map.getPuzzles().get(i).getPuzzleName()))
             {
@@ -214,6 +211,12 @@ public class Player {
                 String ans = input.nextLine();
                 // map.solveThePuzzle(ans);
 
+            }
+        }*/
+        Room temp = map.getRooms().get(currentLocation);
+        if(temp.getHasPuzzle() != 0){
+            if(temp.rPuzzle.getPuzzleName().equalsIgnoreCase(answer)){
+                temp.getrPuzzle().solvePuzzle();
             }
         }
         for(int i = 0; i < Map.getMonsters().size(); i++)
