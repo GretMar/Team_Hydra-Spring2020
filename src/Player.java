@@ -216,7 +216,22 @@ public class Player {
         Room temp = map.getRooms().get(currentLocation);
         if(temp.getHasPuzzle() != 0){
             if(temp.rPuzzle.getPuzzleName().equalsIgnoreCase(answer)){
-                temp.getrPuzzle().solvePuzzle();
+                Scanner userIn = new Scanner(System.in);
+                String com;
+                boolean invalid = true;
+                do{
+                    System.out.println("1. Solve \n2. Ignore puzzle ");
+                    com = userIn.nextLine();
+                    if (com.equalsIgnoreCase("1")){
+                        invalid = false;
+                        temp.getrPuzzle().solvePuzzle();
+                    }else if(com.equalsIgnoreCase("2")){
+                        invalid = false;
+
+                    }else{
+                        System.out.println("invalid command!");
+                    }
+                }while(invalid);
                 temp.setPuzzle(null);
                 temp.setHasPuzzle(0);
             }

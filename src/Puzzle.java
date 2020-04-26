@@ -89,17 +89,19 @@ public class Puzzle {
         System.out.println(puzzleQuestion);
         boolean active = true;
         String response;
-        do{
-            System.out.print("Please type a solution: ");
+        do {
+            System.out.print("Please type a solution or type hint: ");
             response = in.nextLine();
-            if(response.equalsIgnoreCase(puzzleAnswer)||response.equalsIgnoreCase(secondAns)){
+            if (response.equalsIgnoreCase(puzzleAnswer) || response.equalsIgnoreCase(secondAns)) {
                 System.out.println("you solved the puzzle correctly!");
                 active = false;
-            }else{
+            } else if (response.equalsIgnoreCase("hint")) {
+                System.out.println("hint: "+ hint);
+            } else {
                 curA++;
-                System.out.println("the answer you provided is wrong, you still have "+(attempt-curA)+
+                System.out.println("the answer you provided is wrong, you still have " + (attempt - curA) +
                         " remaining attempts. Try one more time ");
-                if (attempt - curA == 0){
+                if (attempt - curA == 0) {
                     active = false;
                     reward = 0f;
                     System.out.println("you failed the puzzle!");
