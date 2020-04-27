@@ -75,7 +75,12 @@ public class Map {
     public static ArrayList<Items> getItems(){
         return items;
     }
-    /**
+    
+    
+    public static void setItems(ArrayList<Items> items) {
+		Map.items = items;
+	}
+	/**
      * Method addItems()
      * adds items to ArrayList of Items
      * @param i
@@ -105,7 +110,7 @@ public class Map {
                 int p;
                 do{
                     p = rInt.nextInt(ran);
-                    System.out.println(p);
+                    //System.out.println(p);
                 }               
                 while (Arrays.asList(deadNums).contains(p));
                 //System.out.println("Here1");
@@ -128,7 +133,7 @@ public class Map {
                 int i;
                 do{
                     i = rInt.nextInt(ran);
-                    System.out.println(i);
+                    //System.out.println(i);
                 }while (Arrays.asList(deadNums).contains(i));
                 deadNums[count] = i;
                 r.setPuzzle(p.get(i));
@@ -138,4 +143,5 @@ public class Map {
             //System.out.println("test2");
         }
     }
+	
 }

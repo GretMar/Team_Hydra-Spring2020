@@ -190,6 +190,7 @@ public class Room {
 
 	public void setItem(Items rItem) {
 		this.rItem = rItem;
+																																			
 	}
 	
 }

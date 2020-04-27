@@ -138,6 +138,7 @@ public class Game {
 
 	        ArrayList<Items> items = itemElements;
 	        Map.randomizeItems(items);
+	        
 			
     		}
     		catch (FileNotFoundException e){
@@ -232,7 +233,7 @@ public class Game {
                             System.out.println("What do you want use the scouter on: ");
                             String ans = op.nextLine();
                             player.scout(ans);
-
+                           
                         } else if (choose.equalsIgnoreCase("2")) {
                             System.out.println("=========================================================================");
                             System.out.println("What do you want to pickup: ");
@@ -311,7 +312,11 @@ public class Game {
         input.close();
     }
 
-    private ArrayList<Puzzle> puzzleReader(){
+    public static ArrayList<Items> getItemElements() {
+		return itemElements;
+	}
+
+	private ArrayList<Puzzle> puzzleReader(){
 
         ArrayList<Puzzle> puzzles;
         //No puzzle control Vars

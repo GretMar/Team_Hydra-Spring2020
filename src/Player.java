@@ -72,10 +72,13 @@ public class Player {
         {
             System.out.println("==================================================================");
             System.out.print("The items in the room are: ");
-            for(int i = 0; i < Map.getItems().size(); i++) {
+            //for(int i = 0; i < Map.getItems().size(); i++) {
              //   if(Map.getRooms().get(currentLocation).getRoomID() == map.getItems().get(i).getItemId())
-                    System.out.print("[" +Map.getItems().get(i).getItemName() + "] ");
-            }
+                    //System.out.print("[" +Map.getItems().get(i).getItemName() + "] ");
+            	
+                    System.out.print(Map.getRooms().get(currentLocation).getrItem().getItemName());
+                    
+            //}
         }
         else if(Map.getRooms().get(currentLocation).getHasItem() == 0) {
             System.out.println("No items in the room");
@@ -112,7 +115,7 @@ public class Player {
             if (item.equalsIgnoreCase(map.getItems().get(i).getItemName())) {
                 inventory.add(map.getItems().get(i));
                 map.getItems().remove(i);
-
+               // Map.setItems()
                 for(i = 0; i < inventory.size(); i++)
                 {
                     if(item.equalsIgnoreCase(inventory.get(i).getItemName()))
