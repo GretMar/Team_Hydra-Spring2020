@@ -46,6 +46,8 @@ public class Game {
     			line1 = reader1.readLine();
     			
     		}
+    		ArrayList<Items> items = itemElements;
+    		Map.randomizeItems(items);
     		}
     		catch (FileNotFoundException e){
     			System.out.println("File not found!");			

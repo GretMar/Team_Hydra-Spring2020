@@ -23,7 +23,7 @@ public class Player {
     public static void addplayer(Player p){player.add(p);}
 
     Player(int playerId,int hp, int attack,boolean hasEquipedItem, String equipedItem) {
-        this. playerId = playerId;
+        this.playerId = playerId;
         this.hp = hp;
         this.attack = attack;
         this.hasEquipedItem = hasEquipedItem;
@@ -35,7 +35,8 @@ public class Player {
     protected void playerStatus()
     {
         System.out.println("Player Status");
-        System.out.println("Hp: " + Player.getHp() + " Attack: " + Player.getAttack());}
+        System.out.println("Hp: " + Player.getHp() + " Attack: " + Player.getAttack());
+    }
 
     /**
      * arrayList of Items
@@ -46,7 +47,6 @@ public class Player {
     public static ArrayList<Items> getInventory(){
         return inventory;
     }
-
     public static void mainHelp(){
         System.out.println("===========================================================================================");
         System.out.println("Help");
@@ -85,8 +85,7 @@ public class Player {
     }
     /**
      * Method inspect
-     * Checks if an Item,
-     * .+6puzzle, monster are in the room52
+     * Checks if an Item, puzzle, monster are in the room
      * and displays it to the player
      */
     public void inspect()
@@ -95,20 +94,23 @@ public class Player {
         {
             System.out.println("==================================================================");
             System.out.print("The items in the room are: ");
-            for(int i = 0; i < map.getItems().size(); i++) {
-                if(Map.getRooms().get(currentLocation).getRoomID() == map.getItems().get(i).getItemId())
-                    System.out.print("[" +map.getItems().get(i).getItemName() + "] ");
-            }
+
+            System.out.print(Map.getRooms().get(currentLocation).getrItem().getItemName());
+
         }
         else if(Map.getRooms().get(currentLocation).getHasItem() == 0) {
             System.out.println("No items in the room");
         }
-        if(Map.getRooms().get(currentLocation).getHasPuzzle() != 0)
+        if(Map.getRooms().get(currentLocation).getHasPuzzle() == 1)
         {
             System.out.println("The room has a puzzle");
-            //if(()//getRoomID()+"").equals(map.getPuzzles().get(i).getPuzzleID()))//this def needs to be changed
-            System.out.println("Puzzle name: " + Map.getRooms().get(currentLocation).getrPuzzle().getPuzzleName());
-
+            for(int i = 0; i < map.getPuzzles().size(); i++)
+            {
+                if((Map.getRooms().get(currentLocation).getRoomID()+"").equals(map.getPuzzles().get(i).getPuzzleID()))//this def needs to be changed
+                {
+                    System.out.println("Puzzle: " + map.getPuzzles().get(i).getPuzzleName());
+                }
+            }
         }
         if(Map.getRooms().get(currentLocation).getHasMonster() == 1)
         {
@@ -131,7 +133,9 @@ public class Player {
             if (item.equalsIgnoreCase(map.getItems().get(i).getItemName())) {
                 inventory.add(map.getItems().get(i));
                 map.getItems().remove(i);
-
+                map.getRooms().get(currentLocation).removeItem(map.getItems().get(i));
+                map.getRooms().get(currentLocation).setHasItem(0);
+                // Map.setItems()
                 for(i = 0; i < inventory.size(); i++)
                 {
                     if(item.equalsIgnoreCase(inventory.get(i).getItemName()))
@@ -225,7 +229,7 @@ public class Player {
                 System.out.println(inventory.get(i).getItemDesc());
             }
         }
-        /*for(int i = 0; i < map.getPuzzles().size(); i++) changing the original puzzle solve method
+        for(int i = 0; i < map.getPuzzles().size(); i++)
         {
             if(answer.equalsIgnoreCase(map.getPuzzles().get(i).getPuzzleName()))
             {
@@ -233,31 +237,6 @@ public class Player {
                 String ans = input.nextLine();
                 // map.solveThePuzzle(ans);
 
-            }
-        }*/
-        Room temp = map.getRooms().get(currentLocation);
-        if(temp.getHasPuzzle() != 0){
-            if(temp.rPuzzle.getPuzzleName().equalsIgnoreCase(answer)){
-                Scanner userIn = new Scanner(System.in);
-                String com;
-                boolean invalid = true;
-                do{
-                    System.out.println("1. Solve \n2. Ignore puzzle ");
-                    com = userIn.nextLine();
-                    if (com.equalsIgnoreCase("1")){
-                        invalid = false;
-                        
-                        hp = hp + (int)(hp * temp.getrPuzzle().solvePuzzle());
-                        //multiply % HP and add it to HP
-                    }else if(com.equalsIgnoreCase("2")){
-                        invalid = false;
-
-                    }else{
-                        System.out.println("invalid command!");
-                    }
-                }while(invalid);
-                temp.setPuzzle(null);
-                temp.setHasPuzzle(0);
             }
         }
         for(int i = 0; i < Map.getMonsters().size(); i++)
@@ -284,10 +263,6 @@ public class Player {
                     Map.getRooms().get(getCurrentLocation()).setHasMonster(0);
                     System.out.println("Monster is gone.");
                 }
-            }
-            else if(answer.equalsIgnoreCase("help"))
-            {
-                fightHelp();
             }
         }
     }
@@ -330,13 +305,5 @@ public class Player {
 
     public static void setCurrentLocation(int currentLocation) {
         Player.currentLocation = currentLocation;
-    }
-
-    public static int getPlayerId() {
-        return playerId;
-    }
-
-    public static void setPlayerId(int playerId) {
-        Player.playerId = playerId;
     }
 }
