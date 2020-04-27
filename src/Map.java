@@ -75,12 +75,12 @@ public class Map {
     public static ArrayList<Items> getItems(){
         return items;
     }
-    
-    
+
+
     public static void setItems(ArrayList<Items> items) {
-		Map.items = items;
-	}
-	/**
+        Map.items = items;
+    }
+    /**
      * Method addItems()
      * adds items to ArrayList of Items
      * @param i
@@ -97,7 +97,7 @@ public class Map {
     public static void removeMonster(Monster m){monsters.remove(m);}
 
     public static void randomizeItems(ArrayList<Items> i) {
-    	int count = 0;
+        int count = 0;
         Random rInt = new Random();
         int ran = i.size();
         int[] deadNums = new int[ran];
@@ -107,17 +107,18 @@ public class Map {
                 do{
                     p = rInt.nextInt(ran);
                     //System.out.println(p);
-                }               
+                }
                 while (Arrays.asList(deadNums).contains(p));
                 //System.out.println("Here1");
                 deadNums[count] = p;
                 //System.out.println("Here");
+                System.out.println(i.get(p).getItemName());
                 r.setItem(i.get(p));
                 count++;
             }
         }
     }
-    
+
     public static void randomizePuzzles(ArrayList<Puzzle> p){
         //System.out.println("test");
         int count = 0;
@@ -139,5 +140,5 @@ public class Map {
             //System.out.println("test2");
         }
     }
-	
+
 }

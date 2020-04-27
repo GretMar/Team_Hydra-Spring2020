@@ -1,4 +1,3 @@
-//room#~Boolean~Room Description~items~puzzleId~Room Connections:(N,E,S,W layout)
 /**
  * Class: Room
  *
@@ -190,14 +189,10 @@ public class Room {
 
 	public void setItem(Items rItem) {
 		this.rItem = rItem;
-																																			
+
 	}
 	public void removeItem(Items item) {
 		rItem = null;
 	}
-	
+
 }
-
-
-
-

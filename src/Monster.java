@@ -42,7 +42,7 @@ public class Monster {
             //System.out.println(player.getHp());
             while (mHp > 0 && Player.getHp() > 0) {
                 System.out.println(mName);
-               // System.out.println(mDescription);
+                // System.out.println(mDescription);
                 System.out.println("Monster Hp: " + mHp + " Attack: ");
                 System.out.println("Player Hp: " + Player.getHp() + " Attack: " + Player.getAttack());
                 System.out.println("What will you do (enter number): ");
