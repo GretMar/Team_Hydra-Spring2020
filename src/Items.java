@@ -173,9 +173,9 @@ public class Items {
 
     }
 
-
+    /*
     public void removeItem(Items item) {
 		currentIndex = Items.indexOf(item);
 		inventory.remove(currentIndex);
-	}
+	}*/
 }
