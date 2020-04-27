@@ -192,6 +192,9 @@ public class Room {
 		this.rItem = rItem;
 																																			
 	}
+	public void removeItem(Items item) {
+		rItem = null;
+	}
 	
 }
 

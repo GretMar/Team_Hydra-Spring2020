@@ -1,5 +1,5 @@
 1
-GokuÅfs House
+Goku‚Äôs House
 false
 Goku's house, also known as Grandpa Gohan's house, is located at the foot of a forest near Mount Paozu.
 0
@@ -331,7 +331,7 @@ An area on Earth located north of Jingle Village
 31
 Final Location
 false
-You are now in the ChampionÅfs Room! Congratulations you have been crowned World Tournament Saga Champion! You win!
+You are now in the Champion‚Äôs Room! Congratulations you have been crowned World Tournament Saga Champion! You win!
 0
 0
 0

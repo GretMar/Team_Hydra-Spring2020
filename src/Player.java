@@ -33,7 +33,8 @@ public class Player {
     protected void playerStatus()
     {
         System.out.println("Player Status");
-        System.out.println("Hp: " + Player.getHp() + " Attack: " + Player.getAttack());}
+        System.out.println("Hp: " + Player.getHp() + " Attack: " + Player.getAttack());
+    }
 
     /**
      * arrayList of Items
@@ -115,6 +116,8 @@ public class Player {
             if (item.equalsIgnoreCase(map.getItems().get(i).getItemName())) {
                 inventory.add(map.getItems().get(i));
                 map.getItems().remove(i);
+                map.getRooms().get(currentLocation).removeItem(map.getItems().get(i));
+                map.getRooms().get(currentLocation).setHasItem(0);
                // Map.setItems()
                 for(i = 0; i < inventory.size(); i++)
                 {
