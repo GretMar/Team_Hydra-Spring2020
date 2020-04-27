@@ -35,8 +35,7 @@ public class Player {
     protected void playerStatus()
     {
         System.out.println("Player Status");
-        System.out.println("Hp: " + Player.getHp() + " Attack: " + Player.getAttack());
-    }
+        System.out.println("Hp: " + Player.getHp() + " Attack: " + Player.getAttack());}
 
     /**
      * arrayList of Items
@@ -96,13 +95,10 @@ public class Player {
         {
             System.out.println("==================================================================");
             System.out.print("The items in the room are: ");
-            //for(int i = 0; i < Map.getItems().size(); i++) {
-             //   if(Map.getRooms().get(currentLocation).getRoomID() == map.getItems().get(i).getItemId())
-                    //System.out.print("[" +Map.getItems().get(i).getItemName() + "] ");
-            	
-                    System.out.print(Map.getRooms().get(currentLocation).getrItem().getItemName());
-                    
-            //}
+            for(int i = 0; i < map.getItems().size(); i++) {
+                if(Map.getRooms().get(currentLocation).getRoomID() == map.getItems().get(i).getItemId())
+                    System.out.print("[" +map.getItems().get(i).getItemName() + "] ");
+            }
         }
         else if(Map.getRooms().get(currentLocation).getHasItem() == 0) {
             System.out.println("No items in the room");
@@ -135,9 +131,7 @@ public class Player {
             if (item.equalsIgnoreCase(map.getItems().get(i).getItemName())) {
                 inventory.add(map.getItems().get(i));
                 map.getItems().remove(i);
-                map.getRooms().get(currentLocation).removeItem(map.getItems().get(i));
-                map.getRooms().get(currentLocation).setHasItem(0);
-               // Map.setItems()
+
                 for(i = 0; i < inventory.size(); i++)
                 {
                     if(item.equalsIgnoreCase(inventory.get(i).getItemName()))
@@ -252,7 +246,9 @@ public class Player {
                     com = userIn.nextLine();
                     if (com.equalsIgnoreCase("1")){
                         invalid = false;
-                        temp.getrPuzzle().solvePuzzle();
+                        
+                        hp = hp + (int)(hp * temp.getrPuzzle().solvePuzzle());
+                        //multiply % HP and add it to HP
                     }else if(com.equalsIgnoreCase("2")){
                         invalid = false;
 

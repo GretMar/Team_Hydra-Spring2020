@@ -42,7 +42,7 @@ public class Game {
     			Items y = new Items(Integer.parseInt(tokens1[0]), tokens1[1], tokens1[2], Boolean.parseBoolean(tokens1[3]),
     						Boolean.parseBoolean(tokens1[4]), Integer.parseInt(tokens1[5]), Integer.parseInt(tokens1[6]));
     			itemElements.add(y);
-    			
+    			Map.addItems(y);
     			line1 = reader1.readLine();
     			
     		}

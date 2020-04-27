@@ -10,7 +10,7 @@
 10*Dragon Ball 7*Created by the Namekian god, these are small orange balls; once all 7 were collected, can summon a mythical beast named Shenron who will increase the players' survival.*false*true*0*0
 11*Potara*Earrings that have incredible properties which can increase individuals power levels during a fight.*false*false*0*60
 12*Chi-Chi Meal*Made by Goku's wife, these meals pack a heavy punch of nutrients.*false*true*0*50
-13*Scouter*Wearable all purpose computers that were created by the Frieza army which used them to measure power levels.*false*true*0*0
+13*Scouter*Wearable all purpose computers that were created by the Frieza army which used them to measure power levels.*false*true*5*0
 14*Champion Belt*This prestigious belt is given to the champion of the World Martial Arts Tournament, etching their name as one of the greatest fighters to have lived.*false*false*0*0
 15*Battle Armor*This armor is used by the Saiyans in which they incorporated a very light weight design which can withstand even the mightiest of blows.*false*false*0*50
 16*Zeno" Button*A button passed down by the great and mighty Zenos. It is said with the press of this button you will get luckier.*false*false*90*0
