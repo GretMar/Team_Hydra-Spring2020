@@ -97,7 +97,7 @@ public class Map {
     public static void removeMonster(Monster m){monsters.remove(m);}
 
     public static void randomizeItems(ArrayList<Items> i) {
-    	int count = 0;
+        int count = 0;
         Random rInt = new Random();
         int ran = i.size();
         int[] deadNums = new int[ran];
@@ -112,6 +112,7 @@ public class Map {
                 //System.out.println("Here1");
                 deadNums[count] = p;
                 //System.out.println("Here");
+                System.out.println(i.get(p).getItemName());
                 r.setItem(i.get(p));
                 count++;
             }

@@ -46,8 +46,6 @@ public class Game {
     			line1 = reader1.readLine();
     			
     		}
-    		ArrayList<Items> items = itemElements;
-    		Map.randomizeItems(items);
     		}
     		catch (FileNotFoundException e){
     			System.out.println("File not found!");			
@@ -165,6 +163,8 @@ public class Game {
         ArrayList<Puzzle> puzzles = puzzleReader();
         //set random puzzle based on rooms
         Map.randomizePuzzles(puzzles);
+        ArrayList<Items> items = itemElements;
+        Map.randomizeItems(items);
         /**
          * Instructions
          */
