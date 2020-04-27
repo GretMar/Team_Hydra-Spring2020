@@ -1,4 +1,8 @@
+import java.util.ArrayList;
+
 public class Items {
+	private int currentIndex;
+	
     private int itemId;
     private String itemName;
     private String itemDesc;
@@ -168,4 +172,10 @@ public class Items {
         }
 
     }
+
+    /*
+    public void removeItem(Items item) {
+		currentIndex = Items.indexOf(item);
+		inventory.remove(currentIndex);
+	}*/
 }

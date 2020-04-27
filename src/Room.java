@@ -16,6 +16,7 @@ public class Room {
 	private int south;
 	private int west;
 	public Puzzle rPuzzle;
+	public Items rItem;
 
 	/**
 	 * Constructor Room
@@ -182,6 +183,19 @@ public class Room {
 	public void setPuzzle(Puzzle rPuzzle) {
 		this.rPuzzle = rPuzzle;
 	}
+
+	public Items getrItem() {
+		return rItem;
+	}
+
+	public void setItem(Items rItem) {
+		this.rItem = rItem;
+																																			
+	}
+	public void removeItem(Items item) {
+		rItem = null;
+	}
+	
 }
 
 

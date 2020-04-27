@@ -47,7 +47,7 @@ public class Map {
         }
     }
 
-    public  ArrayList<Puzzle> getPuzzles(){
+    public static ArrayList<Puzzle> getPuzzles(){
         return puzzles;
     }
     /**
@@ -55,7 +55,7 @@ public class Map {
      * adds to arrayList of puzzles
      * @param p
      */
-    public void addPuzzles(Puzzle p){
+    public static void addPuzzles(Puzzle p){
         puzzles.add(p);
     }
     /**
@@ -72,15 +72,20 @@ public class Map {
      * Method getItems()
      * @return items
      */
-    public ArrayList<Items> getItems(){
+    public static ArrayList<Items> getItems(){
         return items;
     }
-    /**
+    
+    
+    public static void setItems(ArrayList<Items> items) {
+		Map.items = items;
+	}
+	/**
      * Method addItems()
      * adds items to ArrayList of Items
      * @param i
      */
-    public void addItems(Items i){
+    public static void addItems(Items i){
         items.add(i);
     }
 
@@ -91,6 +96,28 @@ public class Map {
 
     public static void removeMonster(Monster m){monsters.remove(m);}
 
+    public static void randomizeItems(ArrayList<Items> i) {
+    	int count = 0;
+        Random rInt = new Random();
+        int ran = i.size();
+        int[] deadNums = new int[ran];
+        for(Room r:rooms){
+            if(r.getHasItem()!=0){
+                int p;
+                do{
+                    p = rInt.nextInt(ran);
+                    //System.out.println(p);
+                }               
+                while (Arrays.asList(deadNums).contains(p));
+                //System.out.println("Here1");
+                deadNums[count] = p;
+                //System.out.println("Here");
+                r.setItem(i.get(p));
+                count++;
+            }
+        }
+    }
+    
     public static void randomizePuzzles(ArrayList<Puzzle> p){
         //System.out.println("test");
         int count = 0;
@@ -112,4 +139,5 @@ public class Map {
             //System.out.println("test2");
         }
     }
+	
 }
