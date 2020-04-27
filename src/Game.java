@@ -227,7 +227,8 @@ public class Game {
 
                     } else if (direction.equalsIgnoreCase("Exit")) {
                         return;
-                    } else {
+                    }
+                        else {
                         System.out.println("Please enter a valid direction enter N,E,S,W");
 
                     }
@@ -322,9 +323,11 @@ public class Game {
                 {
                     Player.mainHelp();
                 }
+
                 else {
                     System.out.println("Invalid input please try again.");
                 }
+
 
             }
         }

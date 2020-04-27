@@ -266,6 +266,9 @@ public class Player {
             }
         }
     }
+    public static void win(){
+
+    }
 
     public static int getHp() {
         return hp;

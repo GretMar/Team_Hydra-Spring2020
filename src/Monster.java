@@ -48,8 +48,8 @@ public class Monster {
                 System.out.println("What will you do (enter number): ");
 
                 System.out.println("1.Attack \n2.Use health item \n3.Equip Item");
-                int chose1 = fInput.nextInt();
-                if (chose1 == 1) {
+                String chose1 = fInput.nextLine();
+                if (chose1.equalsIgnoreCase("1")) {
                     int max = 4;
                     int min = 1;
                     int range = max - min + 1;
@@ -72,14 +72,14 @@ public class Monster {
                         Player.setHp(Player.getHp() - (getAttack4damage()));
                     }
 
-                } else if (chose1 == 2) {
+                } else if (chose1.equalsIgnoreCase("2")) {
 
                     Player.printInventory();
                     System.out.println("What item do you want to heal with: ");
                     String h = fInput.nextLine();
                     Items.heal(h);
 
-                } else if (chose1 == 3) {
+                } else if (chose1.equalsIgnoreCase("3")) {
                     Scanner equipInput = new Scanner(System.in);
                     System.out.println("1.Equip\n2.Unequipped");
                     int p = fInput.nextInt();
@@ -97,7 +97,12 @@ public class Monster {
                         Items.unEquip(h);
                     }
 
-                } else {
+                }
+                else if(chose1.equalsIgnoreCase("help"))
+                {
+                    Player.fightHelp();
+                }
+                else {
                     System.out.println("Invalid try Again!");
                     fightMonster();
                 }

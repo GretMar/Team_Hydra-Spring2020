@@ -119,6 +119,7 @@ public class Items {
                 else
                 {
                     Player.setAttack(Player.getAttack() + Player.getInventory().get(i).getAttackBoost());
+                    Player.setHp(Player.getHp() + Player.getInventory().get(i).getHpBoost());
 
                     Player.getInventory().get(i).setEquipped(true);
                     Player.setHasEquipedItem(true);
@@ -141,6 +142,7 @@ public class Items {
                 if(Player.isHasEquipedItem())
                 {
                     Player.setAttack(Player.getAttack() - Player.getInventory().get(i).getAttackBoost());
+                    Player.setHp(Player.getHp() - Player.getInventory().get(i).getHpBoost());
                     Player.getInventory().get(i).setEquipped(false);
                     Player.setHasEquipedItem(false);
                     Player.setEquipedItem("None");
